@@ -5,7 +5,10 @@ function App() {
 
   return (
       <>
-        <NavBar />
+        <div className='container'>
+          <NavBar />
+
+        </div>
       </>
   )
 }
