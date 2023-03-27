@@ -1,4 +1,5 @@
 import './App.css'
+import CoinPayCart from './components/CoinPayCart/CoinPayCart'
 import NavBar from './components/NavBar/NavBar'
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
       <>
         <div className='container'>
           <NavBar />
-
         </div>
+          <CoinPayCart />
       </>
   )
 }
