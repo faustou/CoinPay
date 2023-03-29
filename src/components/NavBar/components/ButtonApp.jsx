@@ -14,8 +14,9 @@ const ButtonApp = () => {
 export default ButtonApp;
 
 const AppButton = styled.div`
+        margin-top: 1.5rem;
         .app{
-        background-color: #00c3ff;
+        background-color: #9400D3;
         padding: 1rem;
         border-radius: 25px;
         font-size: 1rem;

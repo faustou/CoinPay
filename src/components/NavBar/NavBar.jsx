@@ -61,7 +61,7 @@ const NavContainer = styled.nav`
             margin-right: auto;
             text-align: center;
             transition: all .5s ease;
-            background-color: #9400D3;
+            background-color: #00c3ff;
             padding: 1rem;
             border-radius: 25px;
             border: black 1px solid;

@@ -3,41 +3,122 @@ import ButtonApp from '../NavBar/components/ButtonApp';
 import styled from 'styled-components';
 
 
-const CoinPayCart = () => {
+const CoinPayCard = () => {
     return (
-        <PayCart>
-                <div>
-                    <img className='cart-coinpay' src="https://i.ibb.co/9cmVNsF/cart.png" alt="cart-coinpay" />
+        <PayCard>
+            <div className='paycard-container'>
+                <div className='image-container'>
+                    <div className='circle'></div>
+                    <img className='card-coinpay' src="https://i.ibb.co/M8mr4VM/cart.png" alt="cart-coinpay" />
+                    <div className='circle2'></div>
                 </div>
-                <div>
-                    <p>COINPAY CARD</p>
-                    <h2>Di adiós a las limitaciones bancarias y paga con libertad usando nuestra tarjeta crypto</h2>
+                <div className='text-container'>
+                    <p className='name-p'>COINPAY CARD</p>
+                    <h2>Paga con libertad usando nuestra tarjeta crypto</h2>
                     <ButtonApp />
-                    <p>Para más información visitá los</p>
+                    <p className='more-info'>Para más información visitá los <span> terminos y condiciones. </span> </p>
                 </div>
-        </PayCart>
+            </div>
+        </PayCard>
     );
 };
 
-export default CoinPayCart;
+export default CoinPayCard;
 
-const PayCart = styled.div`
+const PayCard = styled.div`
     display: flex;
-    background-color: black;
+    background-color: #00c3ff;
     gap: 3rem;
     justify-content: center;
     align-items: center;
     background-image: url(../../../public/object.svg);
-    background-position: 0 0;
+    background-position: -175px 180px;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 80%;
     padding-top: max(80px,7.6003125vw);
     padding-bottom: max(10px,0.6909375vw);
     overflow: visible;
     z-index: 12;
-    color: white;
-    .cart-coinpay{
+    position: relative;
+    min-height: 100vh;
+    .paycard-container{
+        display: flex;
+        margin: 3rem;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .card-coinpay{
         width: 300px;
     }
-
+    .image-container{
+        width: 50%;
+        display: flex;
+        img{
+            position: relative;
+            z-index: 10;
+            margin: 0 auto;
+            width: max(344px,29.29575vw);
+            height: max(466px,37.7251875vw);
+            position: relative;
+            animation-name: animation-cart;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animation-cart {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.04);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .circle{
+            position: absolute;
+            top: 55%;
+            left: 26%;
+            transform: translate(-50%,-50%) rotate(-25deg);
+            z-index: 0;
+            border: 0.103640625vw solid black;
+            border-radius: 100%;
+            width: 35%;
+            height: 30%;
+        }
+        .circle2{
+            position: absolute;
+            top: 55%;
+            left: 26%;
+            transform: translate(-50%,-50%) rotate(-20deg);
+            z-index: 0;
+            border: 0.103640625vw solid black;
+            border-radius: 100%;
+            width: 35%;
+            height: 30%;
+        }
+    }
+    h2{
+        color: black;
+        font-size: 4rem;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1;
+        font-weight: 700;
+    }
+    .name-p{
+        margin: 0 0 max(12px,1.03640625vw);
+        text-transform: uppercase;
+        font-size: max(12px,1.1055vw);
+        font-weight: 400;
+    }
+    .more-info{
+        margin-top: 2rem;
+        span{
+            text-decoration: underline;
+        }
+    }
 `
