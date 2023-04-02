@@ -34,7 +34,7 @@ const PayCard = styled.div`
     background-image: url(../../../public/object.svg);
     background-position: -175px 180px;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 200%;
     padding-top: max(80px,7.6003125vw);
     padding-bottom: max(10px,0.6909375vw);
     overflow: visible;
@@ -43,6 +43,8 @@ const PayCard = styled.div`
     min-height: 100vh;
     .paycard-container{
         display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 3rem;
     }
     .text-container{
@@ -55,7 +57,6 @@ const PayCard = styled.div`
         width: 300px;
     }
     .image-container{
-        width: 50%;
         display: flex;
         img{
             position: relative;
@@ -81,25 +82,26 @@ const PayCard = styled.div`
         }
         .circle{
             position: absolute;
-            top: 55%;
-            left: 26%;
-            transform: translate(-50%,-50%) rotate(-25deg);
+            top: 25%;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%,-40%) rotate(-20deg);
             z-index: 0;
             border: 0.103640625vw solid black;
             border-radius: 100%;
-            width: 35%;
-            height: 30%;
+            width: 90%;
+            height: 32vh;
         }
         .circle2{
             position: absolute;
-            top: 55%;
-            left: 26%;
-            transform: translate(-50%,-50%) rotate(-20deg);
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-40%) rotate(-25deg);
             z-index: 0;
             border: 0.103640625vw solid black;
             border-radius: 100%;
-            width: 35%;
-            height: 30%;
+            width: 90%;
+            height: 32vh;
         }
     }
     h2{

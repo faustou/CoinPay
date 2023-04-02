@@ -39,6 +39,12 @@ const NavContainer = styled.nav`
         align-items: center;
         justify-content: space-between;
         font-family: 'Poppins', sans-serif;
+        display: flex;
+        position: fixed;
+        top: 20px;
+        left: 0;
+        z-index: 20;
+        width: 100%;
         a {
             text-decoration: none;
             margin-right: 1rem;

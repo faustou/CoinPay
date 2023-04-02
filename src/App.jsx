@@ -1,19 +1,35 @@
 import './App.css'
 import styled from 'styled-components';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CoinPayCard from './components/CoinPayCart/CoinPayCart'
 import NavBar from './components/NavBar/NavBar'
 import CryptoTable from './components/CryptoTable/CryptoTable';
+import SpaceAnimation from './components/SpaceAnimation/SpaceAnimation';
+import TrackAndTrade from './components/TrackAndTrade/TrackAndTrade';
 
 function App() {
 
   return (
-      <AppContainer>
-        <div className='container'>
-          <NavBar />
-        </div>
+    <>
+      <BrowserRouter>
+        <AppContainer className='bg-dark'>
+          <div className='container bg-dark'>
+            <NavBar />
+          </div>
+          <SpaceAnimation />
+          <TrackAndTrade />
           <CoinPayCard />
-          <CryptoTable />
-      </AppContainer>
+          <Routes>
+          <Route path='/' element={
+              <CryptoTable />
+            } />
+            <Route path='/:number' element={
+              <CryptoTable />
+            } />
+          </Routes>
+        </AppContainer>
+      </BrowserRouter>
+    </>
   )
 }
 
