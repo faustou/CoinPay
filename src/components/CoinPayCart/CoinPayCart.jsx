@@ -89,7 +89,7 @@ const PayCard = styled.div`
             z-index: 0;
             border: 0.103640625vw solid black;
             border-radius: 100%;
-            width: 90%;
+            width: 80%;
             height: 32vh;
         }
         .circle2{
@@ -100,7 +100,7 @@ const PayCard = styled.div`
             z-index: 0;
             border: 0.103640625vw solid black;
             border-radius: 100%;
-            width: 90%;
+            width: 80%;
             height: 32vh;
         }
     }

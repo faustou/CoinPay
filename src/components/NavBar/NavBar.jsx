@@ -44,7 +44,7 @@ const NavContainer = styled.nav`
         top: 20px;
         left: 0;
         z-index: 20;
-        width: 100%;
+        width: 90%;
         a {
             text-decoration: none;
             margin-right: 1rem;
@@ -56,7 +56,7 @@ const NavContainer = styled.nav`
             -webkit-background-clip: text; /* Para compatibilidad con navegadores antiguos */
             color: transparent;
             background-color: black;
-            font-size: 4rem;
+            font-size: 3rem;
         }
         .links {
             position: absolute;

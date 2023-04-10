@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar'
 import CryptoTable from './components/CryptoTable/CryptoTable';
 import SpaceAnimation from './components/SpaceAnimation/SpaceAnimation';
 import TrackAndTrade from './components/TrackAndTrade/TrackAndTrade';
+import CarouselInf from './components/CarouselInf/CarouselInf';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <SpaceAnimation />
           <TrackAndTrade />
           <CoinPayCard />
+          <CarouselInf />
           <Routes>
           <Route path='/' element={
               <CryptoTable />
