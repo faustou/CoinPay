@@ -1,26 +1,26 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-const CarouselInf = () => {
+const CarouselInf2 = () => {
     const images = [
-        {id: '1', img: 'https://i.ibb.co/YNJ7q2d/BitPay.png'},
-        {id: '2', img: 'https://i.ibb.co/yRWSjW0/BlockFi.png'},
-        {id: '3', img: 'https://i.ibb.co/J7G9z7R/Crypto.png'},
-        {id: '4', img: 'https://i.ibb.co/D9Jb0Hh/Etoro.png'},
-        {id: '5', img: 'https://i.ibb.co/vQXPVx8/Globant.png'},
-        {id: '6', img: 'https://i.ibb.co/yFBdGJf/Google.png'},
-        {id: '7', img: 'https://i.ibb.co/NZtBnJD/Mercado-Libre.png'},
-        {id: '8', img: 'https://i.ibb.co/Cv2cgxT/Paxful.png'},
-        {id: '9', img: 'https://i.ibb.co/YNJ7q2d/BitPay.png'},
-        {id: '10', img: 'https://i.ibb.co/yRWSjW0/BlockFi.png'},
-        {id: '11', img: 'https://i.ibb.co/J7G9z7R/Crypto.png'},
-        {id: '12', img: 'https://i.ibb.co/D9Jb0Hh/Etoro.png'},
-        {id: '13', img: 'https://i.ibb.co/vQXPVx8/Globant.png'},
-        {id: '14', img: 'https://i.ibb.co/yFBdGJf/Google.png'},
-        {id: '15', img: 'https://i.ibb.co/NZtBnJD/Mercado-Libre.png'},
-        {id: '16', img: 'https://i.ibb.co/Cv2cgxT/Paxful.png'},
-        {id: '17', img: 'https://i.ibb.co/YNJ7q2d/BitPay.png'},
-        {id: '18', img: 'https://i.ibb.co/yRWSjW0/BlockFi.png'}
+        {id: '1', img: 'https://i.ibb.co/CQngzds/ripio.png'},
+        {id: '2', img: 'https://i.ibb.co/d06m5Ts/shapeshift.png'},
+        {id: '3', img: 'https://i.ibb.co/FhVxK21/trezor.png'},
+        {id: '4', img: 'https://i.ibb.co/DwhVBnB/VISA.png'},
+        {id: '5', img: 'https://i.ibb.co/ySyZFJS/binance.png'},
+        {id: '6', img: 'https://i.ibb.co/y8dHmK3/BITFINEX.png'},
+        {id: '7', img: 'https://i.ibb.co/PhJd6yp/Bitmain.png'},
+        {id: '8', img: 'https://i.ibb.co/CQngzds/ripio.png'},
+        {id: '9', img: 'https://i.ibb.co/d06m5Ts/shapeshift.png'},
+        {id: '10', img: 'https://i.ibb.co/FhVxK21/trezor.png'},
+        {id: '11', img: 'https://i.ibb.co/DwhVBnB/VISA.png'},
+        {id: '12', img: 'https://i.ibb.co/ySyZFJS/binance.png'},
+        {id: '13', img: 'https://i.ibb.co/y8dHmK3/BITFINEX.png'},
+        {id: '14', img: 'https://i.ibb.co/PhJd6yp/Bitmain.png'},
+        {id: '15', img: 'https://i.ibb.co/CQngzds/ripio.png'},
+        {id: '16', img: 'https://i.ibb.co/d06m5Ts/shapeshift.png'},
+        {id: '17', img: 'https://i.ibb.co/FhVxK21/trezor.png'},
+        {id: '18', img: 'https://i.ibb.co/DwhVBnB/VISA.png'}
     ]
 
     return (
@@ -39,20 +39,20 @@ const CarouselInf = () => {
     );
 };
 
-export default CarouselInf;
+export default CarouselInf2;
 
 const whiteGradient = () => `
     background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
-const animationSpeed = '10s';
+const animationSpeed = '15s';
 
 const scroll = keyframes`
     0% {
-        transform: translateX(0);
+        transform: translateX(calc(-112.5px * 7));
     }
     100% {
-        transform: translateX(calc(-75px * 8));
+        transform: translateX(0);
     }
 `;
 
@@ -76,7 +76,7 @@ const Carousel = styled.div`
             content: "";
             height: 100px;
             position: absolute;
-            width: 200px;
+            width: 100px;
             z-index: 2;
         }
 
@@ -94,16 +94,16 @@ const Carousel = styled.div`
         .slide-track {
             animation: ${scroll} ${animationSpeed} linear infinite;
             display: flex;
-            width: calc(75px * 14);
+            width: calc(112.5px * 14);
         }
 
         .slide {
-            height: 30px;
-            width: 75px;
+            height: 45px;
+            width: 112.5px;
 
             img {
-                height: 30px;
-                width: 75px;
+                height: 45px;
+                width: 112.5px;
             }
         }
     }
