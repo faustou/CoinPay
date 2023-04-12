@@ -8,6 +8,7 @@ import SpaceAnimation from './components/SpaceAnimation/SpaceAnimation';
 import TrackAndTrade from './components/TrackAndTrade/TrackAndTrade';
 import CarouselInf from './components/CarouselInf/CarouselInf';
 import CarouselInf2 from './components/CarouselInf/CarouselInf2';
+import LinearCoins from './components/CoinPayCart/LinearCoins';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           </div>
           <SpaceAnimation />
           <TrackAndTrade />
+          <LinearCoins />
           <CoinPayCard />
           <CarouselInf />
           <CarouselInf2 />

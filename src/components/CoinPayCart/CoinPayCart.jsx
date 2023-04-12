@@ -1,13 +1,11 @@
 import React from 'react';
 import ButtonApp from '../NavBar/components/ButtonApp';
 import styled from 'styled-components';
-import LinearCoins from './LinearCoins';
 
 
 const CoinPayCard = () => {
     return (
         <PayCard>
-            <LinearCoins />
             <div className='paycard-container'>
                 <div className='image-container'>
                     <div className='circle'></div>
