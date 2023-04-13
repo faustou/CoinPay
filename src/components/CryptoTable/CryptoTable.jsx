@@ -22,9 +22,9 @@ const CryptoTable = () => {
 
     return (
         <TableStyles>
-            <div className='container table-container'>
-                <table className='table table-dark pt-4'>
-                    <thead>
+            <div className='container table-container ps-0'>
+                <table className='table table-dark ps-0'>
+                    <thead className='text-start'>
                         <tr>
                             {
                                 titles.map(title => (
@@ -66,7 +66,10 @@ const CryptoTable = () => {
 export default CryptoTable;
 
 const TableStyles = styled.div`
+    thead {
+        font-size: 0.8rem;
+    }
     .table-container{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 `

@@ -45,11 +45,28 @@ const whiteGradient = () => `
     background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
-const animationSpeed = '15s';
+const animationSpeed = '10s';
 
 const scroll = keyframes`
     0% {
         transform: translateX(calc(-112.5px * 7));
+    }
+    100% {
+        transform: translateX(0);
+    }
+`;
+const scrollM = keyframes`
+    0% {
+        transform: translateX(calc(-225px * 7));
+    }
+    100% {
+        transform: translateX(0);
+    }
+`;
+
+const scrollL = keyframes`
+    0% {
+        transform: translateX(calc(-337.5px * 7));
     }
     100% {
         transform: translateX(0);
@@ -105,6 +122,45 @@ const Carousel = styled.div`
                 height: 45px;
                 width: 112.5px;
             }
+        }
+        @media (min-width: 768px) {
+            .slide-track {
+            animation: ${scrollM} 10s linear infinite;
+            width: calc(225px * 14);
+        }
+            .slide {
+            height: 90px;
+            width: 225px;
+
+            img {
+                height: 90px;
+                width: 225px;
+            }
+        }
+        }
+        @media (min-width: 1281px) {
+            &::before,
+            &::after {
+                ${whiteGradient}
+                content: "";
+                height: 135px;
+                position: absolute;
+                width: 100px;
+                z-index: 2;
+        }
+            .slide-track {
+            animation: ${scrollL} 10s linear infinite;
+            width: calc(337.5px * 14);
+        }
+            .slide {
+            height: 135px;
+            width: 337.5px;
+
+            img {
+                height: 135px;
+                width: 337.5px;
+            }
+        }
         }
     }
 `;

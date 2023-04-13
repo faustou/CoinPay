@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components';
 const LinearCoins = () => {
     const [coins, setCoins] = useState([])
     const getData = async () => {
-        const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en`)
+        const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en`)
         setCoins(res.data)
     }
     console.log(coins)
@@ -39,14 +39,14 @@ const whiteGradient = () => `
     background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
-const animationSpeed = '5s';
+const animationSpeed = '95s';
 
 const scroll = keyframes`
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-90px * 13));
+        transform: translateX(calc(-90px * 100));
     }
 `;
 
@@ -89,7 +89,7 @@ const LinearCarousel = styled.div`
             animation: ${scroll} ${animationSpeed} linear infinite;
             display: flex;
             gap: 0.8rem;
-            width: calc(90px * 12);
+            width: calc(90px * 100);
         }
 
         .slide {
@@ -99,8 +99,7 @@ const LinearCarousel = styled.div`
             justify-content: center;
             font-size: 0.6rem;
             gap: 0.5rem;
-            height: 40px;
-            min-width: 90px;
+            height: 30px;
             border-radius: 5%;
             margin: 0 0.5rem 0 0.5rem;
             img {
@@ -118,8 +117,7 @@ const LinearCarousel = styled.div`
         @media (min-width: 768px) {
             .slider{
                 .slide-track {
-                    animation: ${scroll} 8s linear infinite;
-                    width: calc(200px * 14);
+                    animation: ${scroll} 75s linear infinite;
                     gap: 2.2rem;
                 }
                 .slide {
@@ -131,7 +129,6 @@ const LinearCarousel = styled.div`
         @media (min-width: 1281px) {
             .slider{
                 .slide-track {
-                    width: calc(300px * 14);
                     gap: 4rem;
                 }
                 .slide {

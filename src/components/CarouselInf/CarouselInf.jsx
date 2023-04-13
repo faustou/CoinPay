@@ -45,7 +45,7 @@ const whiteGradient = () => `
     background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
-const animationSpeed = '10s';
+const animationSpeed = '6s';
 
 const scroll = keyframes`
     0% {
@@ -53,6 +53,24 @@ const scroll = keyframes`
     }
     100% {
         transform: translateX(calc(-75px * 8));
+    }
+`;
+
+const scrollM = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-125px * 8));
+    }
+`;
+
+const scrollL = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-225px * 8));
     }
 `;
 
@@ -105,6 +123,36 @@ const Carousel = styled.div`
                 height: 30px;
                 width: 75px;
             }
+        }
+        @media (min-width: 768px) {
+            .slide-track {
+            animation: ${scrollM} 8s linear infinite;
+            width: calc(125px * 14);
+        }
+            .slide {
+            height: 50px;
+            width: 125px;
+
+            img {
+                height: 50px;
+                width: 125px;
+            }
+        }
+        }
+        @media (min-width: 1281px) {
+            .slide-track {
+            animation: ${scrollL} 10s linear infinite;
+            width: calc(225px * 14);
+        }
+            .slide {
+            height: 90px;
+            width: 225px;
+
+            img {
+                height: 90px;
+                width: 225px;
+            }
+        }
         }
     }
 `;
