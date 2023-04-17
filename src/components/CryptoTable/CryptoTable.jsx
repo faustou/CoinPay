@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CoinRow from './CoinRow';
 import { Link, useParams } from 'react-router-dom';
 
-const titles = ['#', 'Coin', 'Price', 'Price Change', '24h Volume']
+const titles = ['Coin', 'Price', 'Price Change', '24h Volume']
 
 const CryptoTable = () => {
 
@@ -22,8 +22,8 @@ const CryptoTable = () => {
 
     return (
         <TableStyles>
-            <div className='container table-container ps-0'>
-                <table className='table table-dark ps-0'>
+            <div className='container table-container'>
+                <table className='table ps-0'>
                     <thead className='text-start'>
                         <tr>
                             {
@@ -66,8 +66,12 @@ const CryptoTable = () => {
 export default CryptoTable;
 
 const TableStyles = styled.div`
+    background-color: black;
     thead {
-        font-size: 0.8rem;
+        text-align: center;
+        font-size: 0.6rem;
+        white-space: nowrap;
+        color: white;
     }
     .table-container{
         font-size: 0.7rem;

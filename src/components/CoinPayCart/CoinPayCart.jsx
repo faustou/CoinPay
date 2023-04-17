@@ -51,7 +51,8 @@ const PayCard = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
+        //width: 50%;
+        margin-left: 1rem;
     }
     .card-coinpay{
         width: 300px;
@@ -106,7 +107,7 @@ const PayCard = styled.div`
     }
     h2{
         color: black;
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: 'Poppins', sans-serif;
         line-height: 1;
         font-weight: 700;

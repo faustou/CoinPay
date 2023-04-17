@@ -4,8 +4,7 @@ import styled from 'styled-components';
 const CoinRow = ({coin, index}) => {
     return (
         <Coin key={coin.name}>
-            <td> {index} </td>
-            <td> 
+            <td className='nameCoin'> 
                 <img src={coin.image} alt={coin.name} className='me-2 img-fluid img-table' />
                 <span>
                 {coin.name} 
@@ -24,14 +23,20 @@ const CoinRow = ({coin, index}) => {
 export default CoinRow;
 
 const Coin = styled.tr`
+    white-space: nowrap;
     font-weight: 600;
+    color: white;
     .symbolCoin {
         font-size: 0.5rem;
-        font-weight: 600;
+        font-weight: 700;
     }
     .img-table {
         width: 15%;
         max-width: 20px;
+    }
+    .nameCoin {
+        min-width: 130px;
+        font-size: 8px;
     }
 
 `
