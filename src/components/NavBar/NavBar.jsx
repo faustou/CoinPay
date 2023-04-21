@@ -42,9 +42,9 @@ const NavContainer = styled.nav`
         display: flex;
         position: fixed;
         top: 20px;
-        left: 0;
+        left: 20;
         z-index: 20;
-        width: 90%;
+        width: 120%;
         a {
             text-decoration: none;
             margin-right: 1rem;
@@ -105,6 +105,9 @@ const NavContainer = styled.nav`
                 margin-top: 1rem;
                 color: white;
             }
+        }
+        .open {
+            top: 30px;
         }
         .burguer{
             @media(min-width: 768px){

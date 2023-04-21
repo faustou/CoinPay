@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const SpaceAnimation = () => {
     return (
         <AnimationSpace>
+            <img className='cicle-cry' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
             <img className='cicle-eth' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
+            <img className='cicle-btc' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
         </AnimationSpace>
     );
 };
@@ -19,6 +21,7 @@ const AnimationSpace = styled.div`
     background: radial-gradient(circle,#00c3ff 20%,#9400D3 100%);
     background-size: 700% 700%;
     animation: color 17s ease-in-out infinite;
+    overflow: hidden;
     @keyframes color{
         0%{
             background-position: 0 50%;
@@ -33,10 +36,28 @@ const AnimationSpace = styled.div`
     img {
         z-index: -10;
     }
-    .cicle-eth{
+    .cicle-cry {
         position: absolute;
-        bottom: 18%;
-        left: -5%;
+        bottom: 48%;
+        left: -45%;
+        max-width: 300px;
+        animation-name: cicle-anim;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    .cicle-btc {
+        position: absolute;
+        bottom: 58%;
+        left: 45%;
+        max-width: 300px;
+        animation-name: cicle-anim;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+    }
+    .cicle-eth {
+        position: absolute;
+        bottom: -8%;
+        left: -15%;
         max-width: 300px;
         animation-name: cicle-anim;
         animation-duration: 25s;

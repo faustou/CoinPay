@@ -17,15 +17,15 @@ const TrackAndTrade = () => {
     }, [])
 
     return (
-        <TrackContainer className='bg-dark container d-flex flex-column align-items-center justify-content-center'>
-            <div>
-                <img src="" alt="" />
+        <TrackContainer className='d-flex flex-column align-items-center justify-content-center'>
+            <div className='cont-trade'>
                 <p className='title-track text-center'>
                     TRACK AND TRADE 
                     <br />
                     <span> CRYPTO CURRENCIES </span>
                 </p>
-                <img src="" alt="" />
+                <img className='icon-mov-top' src="https://static.vecteezy.com/system/resources/previews/010/849/972/original/3d-illustration-ethereum-logo-png.png" alt="" />
+                <img className='icon-mov' src="https://www.cryptomkt.com/static/landing/img/crypto-pages/BTC.png" alt="" />
             </div>
             <FourCrypto coins={coins} />
         </TrackContainer>
@@ -35,12 +35,48 @@ const TrackAndTrade = () => {
 export default TrackAndTrade;
 
 const TrackContainer = styled.div`
-    height: 75vh;
+    height: 85vh;
+    align-items: center;
+    background-color: black;
+    color: white;
+    // animation
+    @keyframes icon-animation{
+        0% {
+            transition: 0px 0px;
+        }
+        50% {
+            translate: 0px 30px;
+        }
+        100% {
+            translate: 0px 0px;
+        }
+    }    
+    .cont-trade{
+        height: 280px;
+        margin-bottom: 2rem;
+    }
+    .icon-mov-top {
+        height: 80px;
+        position: relative;
+        top: -200px;
+        left: 290px;
+        overflow: hidden;
+        animation: icon-animation 7s ease-in-out infinite;
+    }
+    .icon-mov {
+        height: 80px;
+        position: relative;
+        top: -200px;
+        left: -75px;
+        overflow: hidden;
+        animation: icon-animation 7s ease-in-out infinite;
+    }
     .title-track{
         color: white;
-        font-size: 3rem;
+        font-size: 2.8rem;
+        font-weight: 800;
         span{
-            font-size: 3rem;
+            font-size: 2,8rem;
             color: green;
         }
     }

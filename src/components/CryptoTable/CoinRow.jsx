@@ -25,7 +25,7 @@ export default CoinRow;
 const Coin = styled.tr`
     white-space: nowrap;
     font-weight: 600;
-    color: white;
+    color: whitesmoke;
     .symbolCoin {
         font-size: 0.5rem;
         font-weight: 700;
