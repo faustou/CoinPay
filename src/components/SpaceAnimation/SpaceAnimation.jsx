@@ -6,7 +6,7 @@ const SpaceAnimation = () => {
         <AnimationSpace>
             <img className='cicle-cry' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
             <img className='cicle-eth' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
-            <img className='cicle-btc' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
+            <img className='cicle-btc' src="https://www.lemon.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBTC001.37e8193c.png&w=384&q=75" alt="" />
         </AnimationSpace>
     );
 };

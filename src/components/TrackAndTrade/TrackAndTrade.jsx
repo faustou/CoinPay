@@ -58,26 +58,26 @@ const TrackContainer = styled.div`
     .icon-mov-top {
         height: 80px;
         position: relative;
-        top: -200px;
-        left: 290px;
+        top: -210px;
+        left: 305px;
         overflow: hidden;
-        animation: icon-animation 7s ease-in-out infinite;
+        animation: icon-animation 5s ease-in-out infinite;
     }
     .icon-mov {
         height: 80px;
         position: relative;
-        top: -200px;
-        left: -75px;
+        top: -210px;
+        left: -70px;
         overflow: hidden;
-        animation: icon-animation 7s ease-in-out infinite;
+        animation: icon-animation 5s ease-in-out infinite;
     }
     .title-track{
-        color: white;
+        color: #00c3ff;
         font-size: 2.8rem;
         font-weight: 800;
         span{
             font-size: 2,8rem;
-            color: green;
+            color: #9400D3;
         }
     }
 `

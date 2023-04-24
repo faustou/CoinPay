@@ -9,6 +9,7 @@ import TrackAndTrade from './components/TrackAndTrade/TrackAndTrade';
 import CarouselInf from './components/CarouselInf/CarouselInf';
 import CarouselInf2 from './components/CarouselInf/CarouselInf2';
 import LinearCoins from './components/CoinPayCart/LinearCoins';
+import LinearCoin from './components/LinearCoin/LinearCoin';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
               <CryptoTable />
             } />
           </Routes>
+          <LinearCoin />
         </AppContainer>
       </BrowserRouter>
     </>
