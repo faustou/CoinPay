@@ -25,14 +25,12 @@ const responsive = {
 const LinearCoin = () => {
     return (
         <Carousel responsive={responsive}>
-            <CoinCarousel>
+            <CoinCarousel className='cart-carrusel d-flex justify-content-center align-items-center flex-column'>
                 {
                     Coins.map(Coins =>
-                        <div key={Coins.name} className='cart-carrusel d-flex justify-content-center align-items-center flex-column'>
-                            <div className='cart-carrusel d-flex justify-content-center align-items-center flex-column'>
-                                <img className='w-100' src={Coins.image} alt="" />
-                                <h2> {Coins.name} </h2>
-                            </div>
+                        <div key={Coins.name} className=''>
+                            <img className='w-100' src={Coins.image} alt="" />
+                            <h2> {Coins.name} </h2>
                         </div>
                 )}
             </CoinCarousel>
