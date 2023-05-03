@@ -23,7 +23,7 @@ const LinearCoins = () => {
                             <div class="slide" key={coin.id}>
                                 <img src={coin.image} height="18" width="18" alt={coin.name} />
                                 <p className='symbolCoin text-uppercase'>{coin.symbol} </p>
-                                <p className={coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'}> ${coin.current_price} </p>
+                                <p className={coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'}> ${(coin.current_price).toFixed(2)} </p>
                             </div>
                     )}
                 </div>

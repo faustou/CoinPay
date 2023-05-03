@@ -1,7 +1,7 @@
 export const Coins = [
 
     {
-        "name": "Tether2",
+        "name": "Tether",
         "image": "../public/img/tether.svg",
         "symbol": "USDT"
     },

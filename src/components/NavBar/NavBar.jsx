@@ -55,8 +55,10 @@ const NavContainer = styled.nav`
             font-family: 'Poppins', sans-serif;
             -webkit-background-clip: text; /* Para compatibilidad con navegadores antiguos */
             color: transparent;
-            background-color: black;
-            font-size: 3rem;
+            background-color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 800;
         }
         .links {
             position: absolute;

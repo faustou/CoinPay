@@ -11,11 +11,11 @@ const CoinRow = ({coin, index}) => {
                 </span>
                 <span className='ms-2 text-muted text-uppercase symbolCoin'>{coin.symbol}</span>
             </td>
-            <td>$ {coin.current_price} </td>
+            <td>$ {Number((coin.current_price).toFixed(2))} </td>
             <td className={coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'}>
-                 {parseFloat(coin.price_change_percentage_24h)}
+                 {Number((coin.price_change_percentage_24h).toFixed(2))}%
             </td>
-            <td> {coin.total_volume} </td>
+            <td> ${(coin.total_volume).toLocaleString("es-ES")} </td>
         </Coin>
     );
 };

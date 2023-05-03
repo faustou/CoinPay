@@ -10,6 +10,7 @@ import CarouselInf from './components/CarouselInf/CarouselInf';
 import CarouselInf2 from './components/CarouselInf/CarouselInf2';
 import LinearCoins from './components/CoinPayCart/LinearCoins';
 import LinearCoin from './components/LinearCoin/LinearCoin';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             } />
           </Routes>
           <LinearCoin />
+          <Footer />
         </AppContainer>
       </BrowserRouter>
     </>

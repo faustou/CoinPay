@@ -59,7 +59,7 @@ const TrackContainer = styled.div`
         height: 80px;
         position: relative;
         top: -210px;
-        left: 305px;
+        left: 290px;
         overflow: hidden;
         animation: icon-animation 5s ease-in-out infinite;
     }

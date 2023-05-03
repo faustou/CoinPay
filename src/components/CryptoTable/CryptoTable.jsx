@@ -19,10 +19,11 @@ const CryptoTable = () => {
     useEffect(() => {
         getData()
     }, [number])
+    console.log(coins)
 
     return (
         <TableStyles>
-            <div className='container table-container pt-5'>
+            <div className='container table-container pt-4'>
                 <table className='table ps-0'>
                     <thead className='text-start'>
                         <tr>
@@ -67,6 +68,7 @@ export default CryptoTable;
 
 const TableStyles = styled.div`
     background-color: #9400D3;
+    overflow: hidden;
     thead {
         text-align: center;
         font-size: 0.6rem;

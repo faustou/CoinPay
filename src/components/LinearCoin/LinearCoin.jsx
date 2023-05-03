@@ -1,74 +1,104 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Carousel from 'react-multi-carousel';
+import "react-multi-carousel/lib/styles.css";
 import { Coins } from '../../Coins.js';
 
 const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
+      items: 1.3,
+      slidesToSlide: 1.3 // optional, default to 1.
     }
   };
 
 const LinearCoin = () => {
     return (
-        <Carousel responsive={responsive}>
-            <CoinCarousel className='cart-carrusel d-flex justify-content-center align-items-center flex-column'>
-                {
-                    Coins.map(Coins =>
-                        <div key={Coins.name} className=''>
-                            <img className='w-100' src={Coins.image} alt="" />
-                            <h2> {Coins.name} </h2>
-                        </div>
-                )}
-            </CoinCarousel>
-        </Carousel>
+        //autoPlay={true}
+        <>
+            <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]}  infinite={true} shouldResetAutoplay={true}>
+                    {
+                        Coins.map(Coins =>
+                            <CoinCarousel key={Coins.name}>
+                                <div className='contenedorCoin'>
+                                    <h2 className='symbolCoin'> {Coins.symbol} </h2>
+                                    <img className='w-75' src={Coins.image} alt={Coins.name} />
+                                    <h2 className='symbolName'>  {Coins.name} </h2>
+                                </div>
+                            </CoinCarousel>
+                    )}
+            </Carousel>
+            <SwipeContainer>
+                <img className='arrowLeft' src="https://i.ibb.co/pZN4fqz/arrow.png" alt="arrow" />
+                <img className='swipe' src="https://i.ibb.co/26gf9SC/swipe.png" alt="Swipe" />
+                <img src="https://i.ibb.co/pZN4fqz/arrow.png" alt="arrow" />
+            </SwipeContainer>
+        </>
     );
 };
 
 export default LinearCoin;
 
-const CoinCarousel = styled.div`
-.cart-carrusel{
-    margin: 2rem;
-}
-.cart-carrusel img{
-    width: 340px;
-}
-.cart-carrusel h2{
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 5px;
-    color: black;
-    font-weight: 800;
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 105px;
-    left: 30px;
-}
-.sex-carrusel{
-    background-color: rgba(255, 255, 255, 0.6);
-    border-top: #de4f21 10px solid;
-    padding: 5px;
-    color: black;
-    font-size: 1.5rem;
-    position: absolute;
-    bottom: 55px;
-    left: 30px;
-}
+const SwipeContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 1rem;
+    .arrowLeft {
+        transform: rotate(180deg);
+    }
+    .swipe {
+        height: 75px;
+    }
+    img {
+        height: 50px;
+    }
+`
 
-.carruseles-items{
-    margin-top: 4rem;
-}
+const CoinCarousel = styled.div`
+    background-color: black;
+    padding: 3rem 0 3rem 0;
+    .contenedorCoin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 250px!important;
+        height: 350px;
+        background-color: #00c3ff;
+        margin-left: 1.5rem;
+        border-radius: 1rem;
+        align-items: start;
+        &:hover {
+            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 #9400D3;
+        }
+        .symbolCoin {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-weight: 800;
+            font-size: 1.8rem;
+        }
+        .symbolName {
+            margin-top: 1rem;
+            margin-left: 1rem;
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+        img {
+            max-width: 200px!important;
+            align-self: center;
+        }
+    }
 `

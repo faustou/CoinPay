@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const SpaceAnimation = () => {
     return (
         <AnimationSpace>
-            <img className='cicle-cry' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
-            <img className='cicle-eth' src="https://i.ibb.co/yNw9CQj/ethe.png" alt="" />
-            <img className='cicle-btc' src="https://www.lemon.me/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBTC001.37e8193c.png&w=384&q=75" alt="" />
+            <img className='cicle-cry' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
+            <img className='cicle-eth' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />
+            <img className='cicle-btc' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
         </AnimationSpace>
     );
 };
@@ -14,7 +14,7 @@ const SpaceAnimation = () => {
 export default SpaceAnimation;
 
 const AnimationSpace = styled.div`
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     position: relative;
     z-index: 18;
