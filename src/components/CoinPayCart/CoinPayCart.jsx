@@ -56,6 +56,7 @@ const PayCard = styled.div`
     }
     .card-coinpay{
         width: 300px;
+        top: -50px;
     }
     .image-container{
         display: flex;

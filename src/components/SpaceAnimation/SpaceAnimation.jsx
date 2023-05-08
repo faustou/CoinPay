@@ -4,9 +4,13 @@ import styled from 'styled-components';
 const SpaceAnimation = () => {
     return (
         <AnimationSpace>
-            <img className='cicle-cry' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
-            <img className='cicle-eth' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />
-            <img className='cicle-btc' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
+            <img className='cicle-ethe' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
+            <img className='cicle-ethe-sm' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
+            <img className='cicle-slp' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />
+            <img className='cicle-slp-sm' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />
+            <img className='cicle-doge' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
+            <img className='cicle-doge-md' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
+            <img className='cicle-doge-sm' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
         </AnimationSpace>
     );
 };
@@ -35,40 +39,58 @@ const AnimationSpace = styled.div`
     }
     img {
         z-index: -10;
-    }
-    .cicle-cry {
         position: absolute;
-        bottom: 48%;
-        left: -45%;
-        max-width: 300px;
         animation-name: cicle-anim;
-        animation-duration: 25s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
     }
-    .cicle-btc {
-        position: absolute;
-        bottom: 58%;
+    .cicle-ethe {
+        bottom: 70%;
+        left: -25%;
+        max-width: 250px;
+        animation-name: cicle-anim-two;
+    }
+    .cicle-ethe-sm {
+        bottom: 0%;
+        left: 65%;
+        max-width: 200px;
+        animation-name: cicle-anim-two;
+    }
+    .cicle-doge {
+        bottom: 73%;
         left: 45%;
-        max-width: 300px;
-        animation-name: cicle-anim;
-        animation-duration: 25s;
-        animation-iteration-count: infinite;
+        max-width: 280px;
     }
-    .cicle-eth {
-        position: absolute;
-        bottom: -8%;
-        left: -15%;
-        max-width: 300px;
-        animation-name: cicle-anim;
-        animation-duration: 25s;
-        animation-iteration-count: infinite;
+    .cicle-doge-sm {
+        bottom: -1%;
+        left: 30%;
+        transform: rotate(-60deg);
+        max-width: 90px;
+        animation-name: cicle-anim-one;
+    }
+    .cicle-doge-md {
+        bottom: 45%;
+        left: -1%;
+        max-width: 150px;
+        animation-name: cicle-anim-two;
+    }
+    .cicle-slp {
+        bottom: 8%;
+        left: -20%;
+        max-width: 190px;
+    }
+    .cicle-slp-sm {
+        bottom: 40%;
+        left: 40%;
+        max-width: 200px;
+        animation-name: cicle-anim-one;
     }
     @keyframes cicle-anim {
             0% {
-                transition: 0px -18px;
+                translate: 0px -18px;
             }
             20% {
-                transition: 20px 10px;
+                translate: 20px 10px;
             }
             40% {
                 translate: 40px 30px;
@@ -81,6 +103,46 @@ const AnimationSpace = styled.div`
             }
             100% {
                 translate: 0px -18px;
+            }
+        }
+        @keyframes cicle-anim-one {
+            0% {
+                translate: 20px 0px;
+            }
+            20% {
+                translate: -20px -10px;
+            }
+            40% {
+                translate: -40px -30px;
+            }
+            60% {
+                translate: 5px -10px;
+            }
+            80% {
+                translate: 40px 20px;
+            }
+            100% {
+                translate: 20px 0px;
+            }
+        }
+        @keyframes cicle-anim-two {
+            0% {
+                translate: -20px 20px;
+            }
+            20% {
+                translate: -40px 40px;
+            }
+            40% {
+                translate: -40px -30px;
+            }
+            60% {
+                translate: -10px 10px;
+            }
+            80% {
+                translate: -40px 40px;
+            }
+            100% {
+                translate: -20px 20px;
             }
         }
 `

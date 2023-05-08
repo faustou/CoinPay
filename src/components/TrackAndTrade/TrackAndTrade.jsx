@@ -52,13 +52,16 @@ const TrackContainer = styled.div`
         }
     }    
     .cont-trade{
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         height: 280px;
         margin-bottom: 2rem;
+        letter-spacing: 0.55rem;
+        font-family: 'Poppins', sans-serif;
     }
     .icon-mov-top {
         height: 80px;
         position: relative;
-        top: -210px;
+        top: -220px;
         left: 290px;
         overflow: hidden;
         animation: icon-animation 5s ease-in-out infinite;
@@ -74,7 +77,7 @@ const TrackContainer = styled.div`
     .title-track{
         color: #00c3ff;
         font-size: 2.8rem;
-        font-weight: 800;
+        font-weight: 900;
         span{
             font-size: 2,8rem;
             color: #9400D3;
