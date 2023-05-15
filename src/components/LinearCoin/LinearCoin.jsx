@@ -4,17 +4,28 @@ import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import { Coins } from '../../Coins.js';
 
+
 const responsive = {
+    desktopLarge: {
+        breakpoint: { max: 3000, min: 1500 },
+        items: 6,
+        slidesToSlide: 6 // optional, default to 1.
+      },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1500, min: 1024 },
+      items: 4,
+      slidesToSlide: 4 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 700 },
       items: 3,
       slidesToSlide: 3 // optional, default to 1.
     },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2 // optional, default to 1.
-    },
+    tabletSmall: {
+        breakpoint: { max: 700, min: 464 },
+        items: 2,
+        slidesToSlide: 2 // optional, default to 1.
+      },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1.3,
@@ -24,9 +35,8 @@ const responsive = {
 
 const LinearCoin = () => {
     return (
-        //autoPlay={true}
         <>
-            <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]}  infinite={true} shouldResetAutoplay={true}>
+            <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]} infinite={true} shouldResetAutoplay={true} autoPlaySpeed={4000}>
                     {
                         Coins.map(Coins =>
                             <CoinCarousel key={Coins.name}>
@@ -64,6 +74,9 @@ const SwipeContainer = styled.div`
     img {
         height: 50px;
     }
+    @media (min-width: 1024px) {
+        display: none;
+    }
 `
 
 const CoinCarousel = styled.div`
@@ -100,5 +113,8 @@ const CoinCarousel = styled.div`
             max-width: 200px!important;
             align-self: center;
         }
+    }
+    @media (min-width: 1200px) {
+
     }
 `

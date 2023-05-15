@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ButtonApp = () => {
     return (
-        <AppButton>
+        <AppButton >
             <div>
                 <h2 className='app'>DESCARGÁ LA APP</h2>
             </div>
@@ -25,8 +25,5 @@ const AppButton = styled.div`
         color: black;
         border: black 1px solid;
         max-width: 190px;
-        @media(max-width: 768px){
-            display: none;
-        }
     }
 `

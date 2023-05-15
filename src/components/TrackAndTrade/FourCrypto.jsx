@@ -14,7 +14,7 @@ const FourCrypto = ({coins}) => {
                             <p className='text-muted text-uppercase' style={{fontSize: '10px', textAlign: 'center', marginBottom: '0'}}>PRICE</p>
                             <p className={coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'}>$ {coin.current_price}</p>
                         </div>
-                        <div>
+                        <div className='pb-5'>
                             <p className='text-muted text-uppercase' style={{fontSize: '10px', textAlign: 'center', marginBottom: '0'}}>CHANGE 24H</p>
                             <p className={coin.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'}>{(coin.price_change_percentage_24h).toFixed(2)}%</p>
                         </div>

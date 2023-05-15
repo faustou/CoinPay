@@ -76,6 +76,11 @@ const TableStyles = styled.div`
         color: white;
     }
     .table-container{
-        font-size: 0.7rem;
+        font-size: 0.56rem;
+    }
+    @media (min-width: 464px) {
+        .table-container{
+            font-size: 0.7rem;
+        }
     }
 `

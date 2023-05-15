@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CoinRow = ({coin, index}) => {
+const CoinRow = ({coin}) => {
     return (
         <Coin key={coin.name}>
             <td className='nameCoin'> 

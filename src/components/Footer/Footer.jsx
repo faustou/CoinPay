@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InstagramFilled, FacebookFilled, YoutubeFilled, TwitterCircleFilled, LinkedinFilled } from '@ant-design/icons';
 
 const Footer = () => {
     return (
@@ -9,13 +8,13 @@ const Footer = () => {
                 <h2>COINPAY</h2>
             </div>
             <div className='networks'>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/instagram.svg" alt="telegram" style={{ height: '25px'}} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/telegram.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/discord.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/twitter.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/tiktok.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/youtube.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img src="../public/img/linkedin.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/instagram.svg" alt="telegram" style={{ height: '25px'}} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/telegram.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/discord.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/twitter.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/tiktok.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/youtube.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/linkedin.svg" alt="telegram" style={{ height: '25px' }} /> </a>
             </div>
             <div className='links'>
                 <div className='linksContainer'>
@@ -31,6 +30,13 @@ const Footer = () => {
                         <p>Ayuda/FAQ</p>
                         <p>Lemon Talks</p>
                         <p>Trabajar En Lemon</p>
+                    </div>
+                    <div className='textNet'>
+                        <p>Instagram</p>
+                        <p>Twitter</p>
+                        <p>TIKTOK</p>
+                        <p>Comunidad Discord</p>
+                        <p>Comunidad Reddit</p>
                     </div>
                 </div>
                 <div className='terms'>
@@ -74,6 +80,9 @@ const FooterStyle = styled.div`
             display: flex;
             justify-content: space-evenly;
             gap: 2rem;
+            .textNet {
+                display: none;
+            }
         }
     }
     .networks {
@@ -95,5 +104,56 @@ const FooterStyle = styled.div`
         display: flex;
         font-size: 0.8rem;
         font-weight: 400;
+    }
+    @media (min-width: 464px) {
+        h2 {
+            font-size: 3rem;
+        }
+        .links {
+            font-size: 1.5rem;
+            gap: 1.5rem;
+            .linksContainer {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+        .networks {
+            gap: 1rem;
+            a{
+                width: 50px;
+                height: 55px;
+            }
+            a .imgNetworks {
+                height: 45px!important;
+            }
+        }
+        @media (min-width: 700px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+            h2 {
+                font-size: 2rem;
+                margin: 2rem;
+            }
+            .networks {
+                display: none;
+                a{
+                    width: 50px;
+                    height: 55px;
+                }
+                a .imgNetworks {
+                    height: 45px!important;
+                }
+            }
+            .links {
+                justify-content: center;
+                .linksContainer {
+                    gap: 4rem;
+                    .textNet {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 `

@@ -20,9 +20,10 @@ const TrackAndTrade = () => {
         <TrackContainer className='d-flex flex-column align-items-center justify-content-center'>
             <div className='cont-trade'>
                 <p className='title-track text-center'>
-                    TRACK AND TRADE 
-                    <br />
-                    <span> CRYPTO CURRENCIES </span>
+                    <span> TRACK AND </span>
+                    <span> TRADE </span>
+                    <span className='spanBottom'> CRYPTO </span>
+                    <span className='spanBottom'> CURRENCIES </span>
                 </p>
                 <img className='icon-mov-top' src="https://static.vecteezy.com/system/resources/previews/010/849/972/original/3d-illustration-ethereum-logo-png.png" alt="" />
                 <img className='icon-mov' src="https://www.cryptomkt.com/static/landing/img/crypto-pages/BTC.png" alt="" />
@@ -35,10 +36,11 @@ const TrackAndTrade = () => {
 export default TrackAndTrade;
 
 const TrackContainer = styled.div`
-    height: 85vh;
+    height: 110vh;
     align-items: center;
     background-color: black;
     color: white;
+    padding-top: 2rem;
     // animation
     @keyframes icon-animation{
         0% {
@@ -54,15 +56,22 @@ const TrackContainer = styled.div`
     .cont-trade{
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         height: 280px;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         letter-spacing: 0.55rem;
         font-family: 'Poppins', sans-serif;
+        p span {
+            display: block;
+            width: 250px;
+        }
+        p .spanBottom {
+            color: #00c3ff;
+        }
     }
     .icon-mov-top {
         height: 80px;
         position: relative;
-        top: -220px;
-        left: 290px;
+        top: -210px;
+        left: 220px;
         overflow: hidden;
         animation: icon-animation 5s ease-in-out infinite;
     }
@@ -70,7 +79,7 @@ const TrackContainer = styled.div`
         height: 80px;
         position: relative;
         top: -210px;
-        left: -70px;
+        left: -130px;
         overflow: hidden;
         animation: icon-animation 5s ease-in-out infinite;
     }
@@ -81,6 +90,19 @@ const TrackContainer = styled.div`
         span{
             font-size: 2,8rem;
             color: #9400D3;
+        }
+    }
+    @media(min-width: 700px) {
+        .cont-trade {
+            margin-bottom: 0rem;
+            p span {
+                display: flex;
+                justify-content: center;
+                width: 550px;
+            }
+            .title-track{
+                font-size: 3.2rem;
+            }
         }
     }
 `

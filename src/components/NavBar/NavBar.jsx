@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import BurguerButton from './components/BurguerButton';
-import ButtonApp from './components/ButtonApp';
+import ButtonAppNav from './components/ButtonAppNav';
 
 function NavBar() {
     const [clicked, setClicked] = useState(false)
@@ -24,7 +24,7 @@ function NavBar() {
                     <BurguerButton clicked={clicked} handleClick={handleClick}  />
                 </div>
                 <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
-                    <ButtonApp />
+                    <ButtonAppNav />
             </NavContainer>
         </>
     )
@@ -44,7 +44,7 @@ const NavContainer = styled.nav`
         top: 20px;
         left: 20;
         z-index: 20;
-        width: 120%;
+        width: 83%;
         a {
             text-decoration: none;
             margin-right: 1rem;
