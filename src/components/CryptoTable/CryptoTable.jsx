@@ -83,4 +83,17 @@ const TableStyles = styled.div`
             font-size: 0.7rem;
         }
     }
+
+    @media (min-width: 768px) {
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        thead {
+            text-align: center;
+            font-size: 1rem;
+            white-space: nowrap;
+            color: white;
+        }
+    }
 `

@@ -125,4 +125,38 @@ const PayCard = styled.div`
             text-decoration: underline;
         }
     }
+    @media (min-width: 464px) {
+        .card-coinpay {
+            width: 300px;
+            top: -70px;
+        }
+    }
+    @media (min-width: 900px) {
+        .circle {
+            width: 60%!important;
+            top: 30%!important;
+        }
+        .circle2 {
+            width: 60%!important;
+            top: 30%!important;
+        }
+        .card-coinpay {
+            width: 500px!important;
+            top: -60px;
+        }
+    }
+    @media (min-width: 900px) {
+        .circle {
+            max-width: 50%!important;
+            top: 32%!important;
+        }
+        .circle2 {
+            max-width: 50%!important;
+            top: 32%!important;
+        }
+        .card-coinpay {
+            width: 600px!important;
+            top: -80px;
+        }
+    }
 `

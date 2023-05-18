@@ -25,8 +25,8 @@ const TrackAndTrade = () => {
                     <span className='spanBottom'> CRYPTO </span>
                     <span className='spanBottom'> CURRENCIES </span>
                 </p>
-                <img className='icon-mov-top' src="https://static.vecteezy.com/system/resources/previews/010/849/972/original/3d-illustration-ethereum-logo-png.png" alt="" />
-                <img className='icon-mov' src="https://www.cryptomkt.com/static/landing/img/crypto-pages/BTC.png" alt="" />
+                <img className='icon-mov-top' src="https://static.vecteezy.com/system/resources/previews/010/849/972/original/3d-illustration-ethereum-logo-png.png" alt="ethereum" />
+                <img className='icon-mov' src="https://www.cryptomkt.com/static/landing/img/crypto-pages/BTC.png" alt="bitcoin" />
             </div>
             <FourCrypto coins={coins} />
         </TrackContainer>
@@ -101,8 +101,36 @@ const TrackContainer = styled.div`
                 width: 550px;
             }
             .title-track{
-                font-size: 3.2rem;
+                font-size: 4.2rem;
             }
         }
+        .icon-mov {
+            top: -290px;
+            left: 350px;
+        }
+        .icon-mov-top {
+            top: -290px;
+            left: 60px;
+        }
+    }
+    @media(min-width: 970px) {
+        .title-track span{
+                font-size: 5.2rem;
+            }
+        .icon-mov {
+            top: -390px;
+            left: 370px;
+            height: 140px;
+        }
+        .icon-mov-top {
+            top: -390px;
+            left: -70px;
+            height: 140px;
+        }
+    }
+    @media(min-width: 1500px) {
+        .title-track span{
+                font-size: 5.6rem;
+            }
     }
 `

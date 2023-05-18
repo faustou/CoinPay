@@ -38,5 +38,20 @@ const Coin = styled.tr`
         min-width: 130px;
         font-size: 8px;
     }
+    @media (min-width: 768px) {
+        font-size: 1rem;
+        .img-table {
+            width: 25%;
+            max-width: 40px;
+        }
+        .nameCoin {
+            min-width: 130px;
+            font-size: 1rem;
+        }
+        .symbolCoin {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
 
 `

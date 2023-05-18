@@ -46,7 +46,7 @@ const AnimationSpace = styled.div`
     }
     .cicle-ethe {
         bottom: 70%;
-        left: -25%;
+        left: -5%;
         max-width: 250px;
         animation-name: cicle-anim-two;
     }
@@ -143,6 +143,53 @@ const AnimationSpace = styled.div`
             }
             100% {
                 translate: -20px 20px;
+            }
+        }
+        @media(min-width: 600px) {
+            .cicle-ethe {
+                max-width: 350px;
+            }
+            .cicle-ethe-sm {
+                bottom: 0%;
+                left: 65%;
+                max-width: 250px;
+            }
+            .cicle-doge-md {
+                bottom: 45%;
+                left: 5%;
+                max-width: 180px;
+            }
+            .cicle-slp {
+                bottom: 10%;
+                left: -2%;
+                max-width: 220px;
+            }
+            .cicle-slp-sm {
+                max-width: 250px;
+            }
+        }
+        
+        @media(min-width: 1200px) {
+            .cicle-ethe {
+                max-width: 350px;
+            }
+            .cicle-ethe-sm {
+                bottom: 0%;
+                left: 65%;
+                max-width: 250px;
+            }
+            .cicle-doge-md {
+                bottom: 45%;
+                left: 5%;
+                max-width: 180px;
+            }
+            .cicle-slp {
+                bottom: 10%;
+                left: -2%;
+                max-width: 220px;
+            }
+            .cicle-slp-sm {
+                max-width: 250px;
             }
         }
 `

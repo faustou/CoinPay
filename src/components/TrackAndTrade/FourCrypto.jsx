@@ -1,8 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const FourCrypto = ({coins}) => {
     return (
-        <div className='d-flex text-center overflow-hidden'>
+        <CryptoFour className='d-flex text-center overflow-hidden'>
             {
                 coins.map(coin => (
                     <div key={coin.name} className='d-flex row align-items-center justify-content-center'>
@@ -22,8 +23,22 @@ const FourCrypto = ({coins}) => {
                     </div>
                 ))
             }
-        </div>
+        </CryptoFour>
     );
 };
 
 export default FourCrypto;
+
+const CryptoFour = styled.div`
+    @media(min-width: 1500px) {
+        p{
+            font-size: 1.3rem;
+        }
+        img{
+            width: 100px!important;
+        }
+        .text-muted {
+            font-size: 0.8rem!important;
+        }
+    }
+`

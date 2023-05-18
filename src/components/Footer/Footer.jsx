@@ -128,7 +128,7 @@ const FooterStyle = styled.div`
                 height: 45px!important;
             }
         }
-        @media (min-width: 700px) {
+        @media (min-width: 740px) {
             flex-direction: row;
             justify-content: space-evenly;
             h2 {

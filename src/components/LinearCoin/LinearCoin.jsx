@@ -9,34 +9,34 @@ const responsive = {
     desktopLarge: {
         breakpoint: { max: 3000, min: 1500 },
         items: 6,
-        slidesToSlide: 6 // optional, default to 1.
+        slidesToSlide: 1
       },
     desktop: {
       breakpoint: { max: 1500, min: 1024 },
       items: 4,
-      slidesToSlide: 4 // optional, default to 1.
+      slidesToSlide: 1
     },
     tablet: {
       breakpoint: { max: 1024, min: 700 },
       items: 3,
-      slidesToSlide: 3 // optional, default to 1.
+      slidesToSlide: 2
     },
     tabletSmall: {
         breakpoint: { max: 700, min: 464 },
         items: 2,
-        slidesToSlide: 2 // optional, default to 1.
+        slidesToSlide: 2
       },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1.3,
-      slidesToSlide: 1.3 // optional, default to 1.
+      slidesToSlide: 1.3
     }
   };
 
 const LinearCoin = () => {
     return (
         <>
-            <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]} infinite={true} shouldResetAutoplay={true} autoPlaySpeed={4000}>
+            <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]} infinite={true} autoPlay={true} shouldResetAutoplay={true} autoPlaySpeed={2000}>
                     {
                         Coins.map(Coins =>
                             <CoinCarousel key={Coins.name}>

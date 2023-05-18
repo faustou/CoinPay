@@ -34,7 +34,7 @@ export default NavBar
 
 const NavContainer = styled.nav`
         color: white;
-        padding: .4rem;
+        padding: 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -44,7 +44,7 @@ const NavContainer = styled.nav`
         top: 20px;
         left: 20;
         z-index: 20;
-        width: 83%;
+        width: 84%;
         a {
             text-decoration: none;
             margin-right: 1rem;
@@ -59,6 +59,8 @@ const NavContainer = styled.nav`
             text-transform: uppercase;
             font-size: 2rem;
             font-weight: 800;
+            text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.8);
+            background-color: #f1f1f1;
         }
         .links {
             position: absolute;
@@ -122,7 +124,7 @@ const NavContainer = styled.nav`
 const BgDiv = styled.div`
     background-color: #222;
     position: absolute;
-    top: -2000px;
+    top: -2000px!important;
     left: -1000px;
     width: 100%;
     height: 100%;
