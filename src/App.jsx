@@ -22,9 +22,9 @@ function App() {
             <NavBar />
           </div>
           <SpaceAnimation />
-          <TrackAndTrade />
           <LinearCoins />
           <CoinPayCard />
+          <TrackAndTrade />
           <CarouselInf />
           <CarouselInf2 />
           <Routes>
