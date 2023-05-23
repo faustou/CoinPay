@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BurguerButton from './components/BurguerButton';
 import ButtonAppNav from './components/ButtonAppNav';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     const [clicked, setClicked] = useState(false)
@@ -15,10 +16,21 @@ function NavBar() {
                     <h2 className='logo-coinpay'>CoinPay</h2>
                 </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
-                    <a href='/323'>Home</a>
-                    <a href='/2323'>Market</a>
-                    <a href='/312344'>Tarjeta</a>
-                    <a href='/2322211'>FAQ</a>
+                    <Link to='/1' className='text-decoration-none'>
+                        <a href='/323'>Home</a>
+                    </Link>
+                    <Link to='/1' className='text-decoration-none'>
+                        <a href='/'>Market</a>
+                    </Link>
+                    <Link to='/1' className='text-decoration-none'>
+                        <a href='/'>EARN</a>
+                    </Link>
+                    <Link to='/Card' className='text-decoration-none'>
+                        <a href='/Card'>Tarjeta</a>
+                    </Link>
+                    <Link to='/1' className='text-decoration-none'>
+                        <a href='/2322211'>Ayuda/FAQ</a>
+                    </Link>
                 </div>
                 <div className='burguer'>
                     <BurguerButton clicked={clicked} handleClick={handleClick}  />
@@ -42,9 +54,13 @@ const NavContainer = styled.nav`
         display: flex;
         position: fixed;
         top: 20px;
-        left: 20;
+        left: 20px;
         z-index: 20;
         width: 84%;
+        .burguer {
+            position: absolute;
+            right: -10px;
+        }
         a {
             text-decoration: none;
             margin-right: 1rem;
@@ -78,17 +94,34 @@ const NavContainer = styled.nav`
             a{
                 color: white;
                 font-size: 2rem;
-                font-weight: 700;
+                font-weight: 800;
                 display: block;
+                text-transform: uppercase;
             }
-            @media(min-width: 768px){
+            @media(min-width: 1024px){
                 position: initial;
                 margin: 0;
+                width: 450px!important;
                 a{
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     color: black;
                     display: inline;
                 }
+            }
+        }
+        @media(min-width: 1024px) {
+            left: 80px;
+        }
+        @media(min-width: 1500px) {
+            .links{
+                width: 550px!important;
+                a {
+                    font-size: 1rem;
+                }
+
+            }
+            .logo-coinpay {
+                font-size: 2.5rem;
             }
         }
         .links:hover {
@@ -114,7 +147,7 @@ const NavContainer = styled.nav`
             top: 30px;
         }
         .burguer{
-            @media(min-width: 768px){
+            @media(min-width: 1024px){
                 display: none;
             }
         }

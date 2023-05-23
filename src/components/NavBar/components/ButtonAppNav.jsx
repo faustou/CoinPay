@@ -27,7 +27,7 @@ const AppButtonNav = styled.div`
             border: black 1px solid;
             max-width: 190px;
         }
-        @media(min-width: 768px) {
+        @media(min-width: 1024px) {
             display: block!important;
         }
 `

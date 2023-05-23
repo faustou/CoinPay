@@ -23,18 +23,22 @@ function App() {
           </div>
           <SpaceAnimation />
           <LinearCoins />
-          <CoinPayCard />
+          <Routes>
+            <Route path='/Card' element={
+              <CoinPayCard />
+            } />
+          </Routes>
           <TrackAndTrade />
-          <CarouselInf />
-          <CarouselInf2 />
+            <CarouselInf />
           <Routes>
           <Route path='/' element={
-              <CryptoTable />
-            } />
+            <CryptoTable />
+          } />
             <Route path='/:number' element={
               <CryptoTable />
             } />
           </Routes>
+          <CarouselInf2 />
           <LinearCoin />
           <Footer />
         </AppContainer>

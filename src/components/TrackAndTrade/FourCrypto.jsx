@@ -30,6 +30,9 @@ const FourCrypto = ({coins}) => {
 export default FourCrypto;
 
 const CryptoFour = styled.div`
+    p {
+        font-weight: 800;
+    }
     @media(min-width: 1500px) {
         p{
             font-size: 1.3rem;
