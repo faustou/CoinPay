@@ -23,7 +23,7 @@ const CryptoTable = () => {
 
     return (
         <TableStyles>
-            <div className='container table-container pt-4'>
+            <div className='container table-container pt-4' id='CryptoTable'>
                 <table className='table ps-0'>
                     <thead className='text-start'>
                         <tr>
@@ -85,7 +85,7 @@ const TableStyles = styled.div`
     }
 
     @media (min-width: 768px) {
-        height: 85vh;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;

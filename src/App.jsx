@@ -1,6 +1,6 @@
 import './App.css'
 import styled from 'styled-components';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import CoinPayCard from './components/CoinPayCart/CoinPayCart'
 import NavBar from './components/NavBar/NavBar'
 import CryptoTable from './components/CryptoTable/CryptoTable';
@@ -11,6 +11,7 @@ import CarouselInf2 from './components/CarouselInf/CarouselInf2';
 import LinearCoins from './components/CoinPayCart/LinearCoins';
 import LinearCoin from './components/LinearCoin/LinearCoin';
 import Footer from './components/Footer/Footer';
+import Faqs from './components/Faq/Faqs';
 
 function App() {
 
@@ -23,13 +24,9 @@ function App() {
           </div>
           <SpaceAnimation />
           <LinearCoins />
-          <Routes>
-            <Route path='/Card' element={
-              <CoinPayCard />
-            } />
-          </Routes>
+          <CoinPayCard />
           <TrackAndTrade />
-            <CarouselInf />
+          <CarouselInf />
           <Routes>
           <Route path='/' element={
             <CryptoTable />
@@ -40,6 +37,7 @@ function App() {
           </Routes>
           <CarouselInf2 />
           <LinearCoin />
+          <Faqs />
           <Footer />
         </AppContainer>
       </BrowserRouter>

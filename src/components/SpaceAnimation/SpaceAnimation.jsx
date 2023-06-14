@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SpaceAnimation = () => {
     return (
-        <AnimationSpace>
+        <AnimationSpace id='home'>
             <img className='cicle-ethe' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
             <img className='cicle-ethe-sm' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
             <img className='cicle-slp' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />

@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const CoinPayCard = () => {
     return (
         <PayCard>
-            <div className='paycard-container'>
+            <div className='paycard-container' id='CoinPayCard'>
                 <div className='image-container'>
                     <div className='circle'></div>
                     <img className='card-coinpay' src="https://i.ibb.co/M8mr4VM/cart.png" alt="cart-coinpay" />
@@ -64,7 +64,7 @@ const PayCard = styled.div`
             position: relative;
             z-index: 10;
             margin: 0 auto;
-            width: max(344px,29.29575vw);
+            width: max(344px,29.29575vw)!important;
             height: max(466px,37.7251875vw);
             position: relative;
             animation-name: animation-cart;
@@ -132,27 +132,26 @@ const PayCard = styled.div`
         }
     }
     @media (min-width: 900px) {
+        .image-container{
+            img {
+                top: -10px;
+            }
+        }
+        .paycard-container {
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-basis: 80%;
+            flex-grow: 0;
+        }
         .circle {
-            width: 60%!important;
-            top: 30%!important;
+            max-width: 30%!important;
+            top: 50%!important;
+            left: 24%!important;
         }
         .circle2 {
-            width: 60%!important;
-            top: 30%!important;
-        }
-        .card-coinpay {
-            width: 500px!important;
-            top: -60px;
-        }
-    }
-    @media (min-width: 900px) {
-        .circle {
-            max-width: 50%!important;
-            top: 32%!important;
-        }
-        .circle2 {
-            max-width: 50%!important;
-            top: 32%!important;
+            max-width: 30%!important;
+            top: 50%!important;
+            left: 24%!important;
         }
         .card-coinpay {
             width: 600px!important;

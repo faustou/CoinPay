@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BurguerButton from './components/BurguerButton';
 import ButtonAppNav from './components/ButtonAppNav';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 function NavBar() {
     const [clicked, setClicked] = useState(false)
@@ -16,17 +16,17 @@ function NavBar() {
                     <h2 className='logo-coinpay'>CoinPay</h2>
                 </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
-                    <Link to='/1' className='text-decoration-none'>
-                        <a href='/323'>Home</a>
+                    <Link to="home" spy={true} smooth={true} offset={50} duration={500} className='text-decoration-none'>
+                        <a>Home</a>
                     </Link>
-                    <Link to='/1' className='text-decoration-none'>
+                    <Link to="CryptoTable" spy={true} smooth={true} offset={0} duration={500} className='text-decoration-none'>
                         <a href='/'>Market</a>
                     </Link>
                     <Link to='/1' className='text-decoration-none'>
                         <a href='/'>EARN</a>
                     </Link>
-                    <Link to='/Card' className='text-decoration-none'>
-                        <a href='/Card'>Tarjeta</a>
+                    <Link to="CoinPayCard" spy={true} smooth={true} offset={-150} duration={500} className='text-decoration-none'>
+                        <a>Tarjeta</a>
                     </Link>
                     <Link to='/1' className='text-decoration-none'>
                         <a href='/2322211'>Ayuda/FAQ</a>
