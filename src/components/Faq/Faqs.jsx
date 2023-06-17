@@ -54,7 +54,7 @@ const Faqs = () => {
                 <h2>PREGUNTAS <span> FRECUENTES </span> </h2>
                 <div className='question-item d-flex'>
                     <p className='answer'>Descargá la app Lemon Cash, registrate con tus datos y empezá a operar en crypto.</p>
-                    <h3 className='question'>¿Cómo creo mi cuenta en COINPAY?</h3>
+                    <h3 className='question firstH3'>¿Cómo creo mi cuenta en COINPAY?</h3>
                 </div>
                 <div className='question-item d-flex'>
                     <p className='answer'>Podés depositar pesos a tu CVU de Lemon desde cualquier cuenta bancaria o no bancaria y se acreditan al instante. ¡También podés depositar criptomonedas!</p>
@@ -68,6 +68,9 @@ const Faqs = () => {
                     <p className='answer'>Podés pedir tu Lemon Card sin costo desde la sección 'Tarjeta' dentro de la app, indicando la dirección donde quieras recibirla.</p>
                     <h3 className='question'>¿Cómo pido mi Lemon Card?</h3>
                 </div>
+                <div className='d-flex'>
+                    <p className='buttonFaq'>Ver más preguntas</p>
+                </div>
             </DivFaqDest>
         </>
     );
@@ -78,6 +81,7 @@ export default Faqs;
 const DivFaqDest = styled.div`
     background-color: #00c3ff;
     padding: 2rem;
+    height: 80vh;
     h2{
         display: flex;
         font-family: 'Tusker Grotesk';
@@ -85,10 +89,28 @@ const DivFaqDest = styled.div`
         line-height: 1;
         text-transform: uppercase;
         font-size: 4rem;
-        margin-bottom: 1rem;
+        margin-bottom: 7rem;
         font-weight: 900;
         margin-right: 6rem;
         margin-left: 0;
+    }
+    h2 span {
+        margin-left: 0.5rem;
+    }
+    .buttonFaq{
+        border-radius: 29px;
+        border: 1px solid black;
+        background-color: #00c3ff;
+        padding: 20px 20px;
+        color: black;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1;
+        cursor: pointer;
+    }
+    .buttonFaq:hover{
+        background-color: #9400D3;
     }
     .question{
         text-align: center;
@@ -104,22 +126,79 @@ const DivFaqDest = styled.div`
     .question-item {
         align-items: center;
         width: 100%;
-        padding: 1rem;
         text-align: start;
         line-height: 1;
+        .firstH3{
+            border-top: 1px solid black;
+        }
         h3{
             width: 70%;
-            text-align: center;
+            padding: 1rem;
+            text-align: start;
             border-bottom: 1px solid black;
         }
         p{
             width: 30%;
         }
     }
+    @media(max-width: 767px){
+        display: none!important;
+    }
+    @media(min-width: 1300px){
+        height: 90vh;
+        h2{
+            font-size: 5rem;
+            margin-bottom: 5rem;
+        }
+        h2 span {
+            margin-left: 0.7rem;
+        }
+        .buttonFaq{
+            margin-top: 1.5rem;
+            position: relative;
+            top: 0;
+        }
+        .question-item{
+            h3{
+                font-size: 2.1rem;
+                padding: 1.5rem;
+            }
+        }
+    }
+    @media(min-width: 1600px){
+        height: 100vh;
+        h2{
+            font-size: 8rem;
+            margin-bottom: 4rem;
+        }
+        .question-item{
+            h3{
+                font-size: 2.63rem;
+                padding: 1.5rem;
+            }
+        }
+    }
+    @media(min-width: 1700px){
+        padding-top: 8rem;
+        h2{
+            margin-bottom: 3rem;
+        }
+        .question-item{
+            h3{
+                font-size: 3rem;
+                padding: 1.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
 `
 
 const DivFaq = styled.div`
     background-color: #00c3ff;
+    height: 100vh;
+    overflow: hidden;
     h2{
         display: flex;
         flex-direction: column;
@@ -128,10 +207,16 @@ const DivFaq = styled.div`
         line-height: 1;
         text-transform: uppercase;
         font-size: 7rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         font-weight: 900;
         margin-right: 6rem;
         margin-left: 0;
+    }
+    .row-title-text{
+        padding-right: 7rem!important;
+    }
+    .styles_faq-row__2YF3c{
+        border-bottom: 1px solid black!important;
     }
     @media(min-width: 768px){
         display: none!important;
