@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <AppContainer className='bg-dark'>
+        <AppContainer>
           <div className='container bg-dark'>
             <NavBar />
           </div>
@@ -48,6 +48,7 @@ function App() {
 export default App
 
 const AppContainer = styled.div`
+  background-color: #00c3ff;
   color: black;
   font-family: 'Poppins', sans-serif;
 `

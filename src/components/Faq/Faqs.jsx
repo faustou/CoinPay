@@ -82,6 +82,9 @@ const DivFaqDest = styled.div`
     background-color: #00c3ff;
     padding: 2rem;
     height: 80vh;
+    background-image: url("../../../public/img/blob.svg");
+    background-position: -80px 20px;
+    background-repeat: no-repeat;
     h2{
         display: flex;
         font-family: 'Tusker Grotesk';

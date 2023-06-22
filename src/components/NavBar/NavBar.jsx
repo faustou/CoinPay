@@ -69,7 +69,7 @@ const NavContainer = styled.nav`
         .logo-coinpay {
             background-clip: text;
             font-family: 'Poppins', sans-serif;
-            -webkit-background-clip: text; /* Para compatibilidad con navegadores antiguos */
+            -webkit-background-clip: text;
             color: transparent;
             background-color: white;
             text-transform: uppercase;

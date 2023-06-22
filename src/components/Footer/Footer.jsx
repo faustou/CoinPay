@@ -61,8 +61,9 @@ const FooterStyle = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    background-color: #9400D3;
+    background-color: #FFD6E8;
     gap: 1rem;
+    border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) 0 0;
     h2 {
         font-size: 2rem;
         font-weight: 800;

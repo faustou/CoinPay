@@ -27,6 +27,9 @@ const AppButtonNav = styled.div`
             border: black 1px solid;
             max-width: 190px;
         }
+        h2:hover {
+            box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 black;
+        }
         @media(min-width: 1024px) {
             display: block!important;
         }

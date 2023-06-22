@@ -67,13 +67,17 @@ const CryptoTable = () => {
 export default CryptoTable;
 
 const TableStyles = styled.div`
-    background-color: #9400D3;
+    background-color: #FFD6E8;
     overflow: hidden;
+    border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw);
     thead {
         text-align: center;
         font-size: 0.6rem;
         white-space: nowrap;
-        color: white;
+        color: black;
+    }
+    tbody{
+        border-color: black;
     }
     .table-container{
         font-size: 0.56rem;
@@ -93,7 +97,7 @@ const TableStyles = styled.div`
             text-align: center;
             font-size: 1rem;
             white-space: nowrap;
-            color: white;
+            color: black;
         }
     }
 `

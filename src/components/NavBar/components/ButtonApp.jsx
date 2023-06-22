@@ -16,14 +16,17 @@ export default ButtonApp;
 const AppButton = styled.div`
         margin-top: 1.5rem;
         .app{
-        background-color: #9400D3;
-        padding: 1rem;
-        border-radius: 25px;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1;
-        color: black;
-        border: black 1px solid;
-        max-width: 190px;
-    }
+            background-color: #9400D3;
+            padding: 1rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            color: black;
+            border: black 1px solid;
+            max-width: 190px;
+        }
+        h2:hover {
+            box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 black;
+        }
 `
