@@ -95,7 +95,7 @@ const CoinCarousel = styled.div`
         border-radius: 1rem;
         align-items: start;
         &:hover {
-            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 #9400D3;
+            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 #FFD6E8;
         }
         .symbolCoin {
             margin-top: 1rem;

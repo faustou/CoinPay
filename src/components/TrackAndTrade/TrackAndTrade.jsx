@@ -36,7 +36,7 @@ const TrackAndTrade = () => {
 export default TrackAndTrade;
 
 const TrackContainer = styled.div`
-    height: 100vh;
+    height: 115vh;
     align-items: center;
     background-color: #00c3ff;
     padding-top: 2rem;
@@ -61,17 +61,17 @@ const TrackContainer = styled.div`
         p span {
             display: block;
             width: 250px;
-            color: #9400D3;
+            color: #FFD6E8;
             text-shadow: 2px 2px 4px black;
         }
         p .spanBottom {
-            color: #9400D3;
+            color: black;
         }
     }
     .icon-mov-top {
         height: 80px;
         position: relative;
-        top: -180px;
+        top: -280px;
         left: 220px;
         overflow: hidden;
         animation: icon-animation 5s ease-in-out infinite;
@@ -79,20 +79,21 @@ const TrackContainer = styled.div`
     .icon-mov {
         height: 80px;
         position: relative;
-        top: -180px;
+        top: -280px;
         left: -130px;
         overflow: hidden;
         animation: icon-animation 5s ease-in-out infinite;
     }
     .title-track{
-        color: #00c3ff;
-        font-size: 2.3rem;
+        color: #FFD6E8;
+        font-size: 7rem;
         font-weight: 900;
-        font-style: italic;
-        font-family: "Arial", sans-serif;
+        font-family: 'Tusker Grotesk';
+        line-height: 1;
+        text-transform: uppercase;
         span{
             font-size: 2,8rem;
-            color: #9400D3;
+            color: #FFD6E8;
         }
     }
     @media(min-width: 700px) {
@@ -104,7 +105,7 @@ const TrackContainer = styled.div`
                 width: 550px;
             }
             .title-track{
-                font-size: 4.2rem;
+                font-size: 8rem;
             }
         }
         .icon-mov {

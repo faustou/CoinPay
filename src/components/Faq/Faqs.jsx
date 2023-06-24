@@ -81,7 +81,7 @@ export default Faqs;
 const DivFaqDest = styled.div`
     background-color: #00c3ff;
     padding: 2rem;
-    height: 80vh;
+    height: 110vh;
     background-image: url("../../../public/img/blob.svg");
     background-position: -80px 20px;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ const DivFaqDest = styled.div`
         cursor: pointer;
     }
     .buttonFaq:hover{
-        background-color: #9400D3;
+        background-color: #FFD6E8;
     }
     .question{
         text-align: center;
@@ -148,7 +148,7 @@ const DivFaqDest = styled.div`
         display: none!important;
     }
     @media(min-width: 1300px){
-        height: 90vh;
+        height: 120vh;
         h2{
             font-size: 5rem;
             margin-bottom: 5rem;
@@ -169,7 +169,6 @@ const DivFaqDest = styled.div`
         }
     }
     @media(min-width: 1600px){
-        height: 100vh;
         h2{
             font-size: 8rem;
             margin-bottom: 4rem;

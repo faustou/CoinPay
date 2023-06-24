@@ -26,7 +26,6 @@ function App() {
           <LinearCoins />
           <CoinPayCard />
           <TrackAndTrade />
-          <CarouselInf />
           <Routes>
           <Route path='/' element={
             <CryptoTable />
@@ -35,6 +34,7 @@ function App() {
               <CryptoTable />
             } />
           </Routes>
+          <CarouselInf />
           <CarouselInf2 />
           <LinearCoin />
           <Faqs />
