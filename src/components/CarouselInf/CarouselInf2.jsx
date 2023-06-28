@@ -3,24 +3,24 @@ import styled, { keyframes } from 'styled-components';
 
 const CarouselInf2 = () => {
     const images = [
-        {id: '1', img: 'https://i.ibb.co/CQngzds/ripio.png'},
-        {id: '2', img: 'https://i.ibb.co/d06m5Ts/shapeshift.png'},
-        {id: '3', img: 'https://i.ibb.co/FhVxK21/trezor.png'},
-        {id: '4', img: 'https://i.ibb.co/DwhVBnB/VISA.png'},
-        {id: '5', img: 'https://i.ibb.co/ySyZFJS/binance.png'},
-        {id: '6', img: 'https://i.ibb.co/y8dHmK3/BITFINEX.png'},
-        {id: '7', img: 'https://i.ibb.co/PhJd6yp/Bitmain.png'},
-        {id: '8', img: 'https://i.ibb.co/CQngzds/ripio.png'},
-        {id: '9', img: 'https://i.ibb.co/d06m5Ts/shapeshift.png'},
-        {id: '10', img: 'https://i.ibb.co/FhVxK21/trezor.png'},
-        {id: '11', img: 'https://i.ibb.co/DwhVBnB/VISA.png'},
-        {id: '12', img: 'https://i.ibb.co/ySyZFJS/binance.png'},
-        {id: '13', img: 'https://i.ibb.co/y8dHmK3/BITFINEX.png'},
-        {id: '14', img: 'https://i.ibb.co/PhJd6yp/Bitmain.png'},
-        {id: '15', img: 'https://i.ibb.co/CQngzds/ripio.png'},
-        {id: '16', img: 'https://i.ibb.co/d06m5Ts/shapeshift.png'},
-        {id: '17', img: 'https://i.ibb.co/FhVxK21/trezor.png'},
-        {id: '18', img: 'https://i.ibb.co/DwhVBnB/VISA.png'}
+        {id: '1', img: 'https://i.ibb.co/prP1r53/ripio.png'},
+        {id: '2', img: 'https://i.ibb.co/5Wh4JM9/shapeshift.png'},
+        {id: '3', img: 'https://i.ibb.co/hWkX0R9/trezor.png'},
+        {id: '4', img: 'https://i.ibb.co/tYmFzpQ/VISA.png'},
+        {id: '5', img: 'https://i.ibb.co/b6P7nbC/binance.png'},
+        {id: '6', img: 'https://i.ibb.co/D1rb2pc/BITFINEX.png'},
+        {id: '7', img: 'https://i.ibb.co/dKcmv9q/Bitmain.png'},
+        {id: '8', img: 'https://i.ibb.co/prP1r53/ripio.png'},
+        {id: '9', img: 'https://i.ibb.co/5Wh4JM9/shapeshift.png'},
+        {id: '10', img: 'https://i.ibb.co/hWkX0R9/trezor.png'},
+        {id: '11', img: 'https://i.ibb.co/tYmFzpQ/VISA.png'},
+        {id: '12', img: 'https://i.ibb.co/b6P7nbC/binance.png'},
+        {id: '13', img: 'https://i.ibb.co/D1rb2pc/BITFINEX.png'},
+        {id: '14', img: 'https://i.ibb.co/dKcmv9q/Bitmain.png'},
+        {id: '15', img: 'https://i.ibb.co/prP1r53/ripio.png'},
+        {id: '16', img: 'https://i.ibb.co/5Wh4JM9/shapeshift.png'},
+        {id: '17', img: 'https://i.ibb.co/hWkX0R9/trezor.png'},
+        {id: '18', img: 'https://i.ibb.co/tYmFzpQ/VISA.png'}
     ]
 
     return (
@@ -42,7 +42,7 @@ const CarouselInf2 = () => {
 export default CarouselInf2;
 
 const whiteGradient = () => `
-    background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient( to right, #9400D3 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
 const animationSpeed = '10s';
@@ -74,7 +74,7 @@ const scrollL = keyframes`
 `;
 
 const Carousel = styled.div`
-    background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient( to right, #9400D3 1%, rgba(255, 255, 255, 0) 100%);
     align-items: center;
     background: #00c3ff;
     display: flex;

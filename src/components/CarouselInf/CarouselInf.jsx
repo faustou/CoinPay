@@ -3,24 +3,24 @@ import styled, { keyframes } from 'styled-components';
 
 const CarouselInf = () => {
     const images = [
-        {id: '1', img: 'https://i.ibb.co/YNJ7q2d/BitPay.png'},
-        {id: '2', img: 'https://i.ibb.co/yRWSjW0/BlockFi.png'},
-        {id: '3', img: 'https://i.ibb.co/J7G9z7R/Crypto.png'},
-        {id: '4', img: 'https://i.ibb.co/D9Jb0Hh/Etoro.png'},
-        {id: '5', img: 'https://i.ibb.co/vQXPVx8/Globant.png'},
-        {id: '6', img: 'https://i.ibb.co/yFBdGJf/Google.png'},
-        {id: '7', img: 'https://i.ibb.co/NZtBnJD/Mercado-Libre.png'},
-        {id: '8', img: 'https://i.ibb.co/Cv2cgxT/Paxful.png'},
-        {id: '9', img: 'https://i.ibb.co/YNJ7q2d/BitPay.png'},
-        {id: '10', img: 'https://i.ibb.co/yRWSjW0/BlockFi.png'},
-        {id: '11', img: 'https://i.ibb.co/J7G9z7R/Crypto.png'},
-        {id: '12', img: 'https://i.ibb.co/D9Jb0Hh/Etoro.png'},
-        {id: '13', img: 'https://i.ibb.co/vQXPVx8/Globant.png'},
-        {id: '14', img: 'https://i.ibb.co/yFBdGJf/Google.png'},
-        {id: '15', img: 'https://i.ibb.co/NZtBnJD/Mercado-Libre.png'},
-        {id: '16', img: 'https://i.ibb.co/Cv2cgxT/Paxful.png'},
-        {id: '17', img: 'https://i.ibb.co/YNJ7q2d/BitPay.png'},
-        {id: '18', img: 'https://i.ibb.co/yRWSjW0/BlockFi.png'}
+        {id: '1', img: 'https://i.ibb.co/Mf9H08s/BitPay.png'},
+        {id: '2', img: 'https://i.ibb.co/HXF9KxX/BlockFi.png'},
+        {id: '3', img: 'https://i.ibb.co/FBLKkSn/Crypto.png'},
+        {id: '4', img: 'https://i.ibb.co/XVm6sv7/Etoro.png'},
+        {id: '5', img: 'https://i.ibb.co/vxk0vjh/Globant.png'},
+        {id: '6', img: 'https://i.ibb.co/61WrrCz/Google.png'},
+        {id: '7', img: 'https://i.ibb.co/cvkmks3/Mercado-Libre.png'},
+        {id: '8', img: 'https://i.ibb.co/9rBJ2LK/Paxful.png'},
+        {id: '9', img: 'https://i.ibb.co/Mf9H08s/BitPay.png'},
+        {id: '10', img: 'https://i.ibb.co/HXF9KxX/BlockFi.png'},
+        {id: '11', img: 'https://i.ibb.co/FBLKkSn/Crypto.png'},
+        {id: '12', img: 'https://i.ibb.co/XVm6sv7/Etoro.png'},
+        {id: '13', img: 'https://i.ibb.co/vxk0vjh/Globant.png'},
+        {id: '14', img: 'https://i.ibb.co/61WrrCz/Google.png'},
+        {id: '15', img: 'https://i.ibb.co/cvkmks3/Mercado-Libre.png'},
+        {id: '16', img: 'https://i.ibb.co/9rBJ2LK/Paxful.png'},
+        {id: '17', img: 'https://i.ibb.co/Mf9H08s/BitPay.png'},
+        {id: '18', img: 'https://i.ibb.co/HXF9KxX/BlockFi.png'}
     ]
 
     return (
@@ -42,7 +42,7 @@ const CarouselInf = () => {
 export default CarouselInf;
 
 const whiteGradient = () => `
-    background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient( to right, #9400D3 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
 const animationSpeed = '6s';
@@ -75,14 +75,14 @@ const scrollL = keyframes`
 `;
 
 const Carousel = styled.div`
-    background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient( to right, #9400D3 1%, rgba(255, 255, 255, 0) 100%);
     align-items: center;
-    background: #00c3ff;
+    background: green;
     display: flex;
     justify-content: center;
 
     .slider {
-        background: #00c3ff;
+        background: green;
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
         margin: auto;
         overflow: hidden;

@@ -41,21 +41,21 @@ const CryptoTable = () => {
                     </tbody>
                         
                 </table>
-                <div pill className='container d-flex align-items-center justify-content-center'>
-                    <Link to='/1' className='text-decoration-none'>
-                        <p className='rounded bg-gradient text-white p-2 ms-4'>1</p>
+                <div pill className='container d-flex align-items-center justify-content-center pills'>
+                    <Link to='/1' className='text-decoration-none links-pills'>
+                        <p className='rounded bg-gradient text-black p-1.5 ms-4 btn btn-outline-dark btn-text-hover'>1</p>
                     </Link>
-                    <Link to='/2' className='text-decoration-none'>
-                        <p className='rounded bg-gradient text-white p-2 ms-4'>2</p>
+                    <Link to='/2' className='text-decoration-none links-pills'>
+                        <p className='rounded bg-gradient text-black p-1.5 ms-4 btn btn-outline-dark btn-text-hover'>2</p>
                     </Link>
-                    <Link to='/3' className='text-decoration-none'>
-                        <p className='rounded bg-gradient text-white p-2 ms-4'>3</p>
+                    <Link to='/3' className='text-decoration-none links-pills'>
+                        <p className='rounded bg-gradient text-black p-1.5 ms-4 btn btn-outline-dark btn-text-hover'>3</p>
                     </Link>
-                    <Link to='/4' className='text-decoration-none'>
-                        <p className='rounded bg-gradient text-white p-2 ms-4'>4</p>
+                    <Link to='/4' className='text-decoration-none links-pills'>
+                        <p className='rounded bg-gradient text-black p-1.5 ms-4 btn btn-outline-dark btn-text-hover'>4</p>
                     </Link>
-                    <Link to='/5' className='text-decoration-none'>
-                        <p className='rounded bg-gradient text-white p-2 ms-4'>5</p>
+                    <Link to='/5' className='text-decoration-none links-pills'>
+                        <p className='rounded bg-gradient text-black p-1.5 ms-4 btn btn-outline-dark btn-text-hover'>5</p>
                     </Link>
                 </div>
             </div>
@@ -67,9 +67,10 @@ const CryptoTable = () => {
 export default CryptoTable;
 
 const TableStyles = styled.div`
-    background-color: #FFD6E8;
+    background-color: ${props => props.theme.colors.primary};
     overflow: hidden;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw);
+    margin: 3rem 0px 3rem 0px;
     thead {
         text-align: center;
         font-size: 0.6rem;
@@ -81,6 +82,18 @@ const TableStyles = styled.div`
     }
     .table-container{
         font-size: 0.56rem;
+    }
+    #CryptoTable{
+        .pills{
+            .links-pills{
+                .btn-text-hover {
+                    &:hover {
+                        background-color: black;
+                        color: white!important;
+                    }
+                }
+            }
+        }
     }
     @media (min-width: 464px) {
         .table-container{

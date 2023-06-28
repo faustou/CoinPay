@@ -31,6 +31,7 @@ export default FourCrypto;
 
 const CryptoFour = styled.div`
     p {
+        color: ${props => props.theme.colors.tertiary};
         font-weight: 800;
     }
     @media(min-width: 1500px) {

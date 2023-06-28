@@ -36,7 +36,7 @@ const LinearCoins = () => {
 export default LinearCoins;
 
 const whiteGradient = () => `
-    background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient( to right, #9400D3 1%, rgba(255, 255, 255, 0) 100%);
 `;
 
 const animationSpeed = '95s';
@@ -51,14 +51,14 @@ const scroll = keyframes`
 `;
 
 const LinearCarousel = styled.div`
-    background: linear-gradient( to right, #00c3ff 1%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient( to right, #9400D3 1%, rgba(255, 255, 255, 0) 100%);
     align-items: center;
-    background: #00c3ff;
+    background: #9400D3;
     display: flex;
     justify-content: center;
 
     .slider {
-        background: #00c3ff;
+        background: ${props => props.theme.colors.primary};
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
         margin: auto;
         overflow: hidden;

@@ -22,7 +22,7 @@ const data = {
       }]
   }
   const styles = {
-    bgColor: '#00c3ff',
+    bgColor: '${props => props.theme.colors.primary}',
     titleTextColor: "black",
     rowTitleColor: "black",
     arrowColor: "black",
@@ -79,12 +79,13 @@ const Faqs = () => {
 export default Faqs;
 
 const DivFaqDest = styled.div`
-    background-color: #00c3ff;
+    background-color: ${props => props.theme.colors.secondary};
     padding: 2rem;
     height: 110vh;
     background-image: url("../../../public/img/blob.svg");
     background-position: -80px 20px;
     background-repeat: no-repeat;
+    color: ${props => props.theme.colors.tertiary};
     h2{
         display: flex;
         font-family: 'Tusker Grotesk';
@@ -103,7 +104,7 @@ const DivFaqDest = styled.div`
     .buttonFaq{
         border-radius: 29px;
         border: 1px solid black;
-        background-color: #00c3ff;
+        background-color: ${props => props.theme.colors.primary};
         padding: 20px 20px;
         color: black;
         font-size: 1.2rem;
@@ -132,13 +133,13 @@ const DivFaqDest = styled.div`
         text-align: start;
         line-height: 1;
         .firstH3{
-            border-top: 1px solid black;
+            border-top: 1px solid ${props => props.theme.colors.tertiary};
         }
         h3{
             width: 70%;
             padding: 1rem;
             text-align: start;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid ${props => props.theme.colors.tertiary};
         }
         p{
             width: 30%;
@@ -198,9 +199,10 @@ const DivFaqDest = styled.div`
 `
 
 const DivFaq = styled.div`
-    background-color: #00c3ff;
-    height: 100vh;
+    background-color: ${props => props.theme.colors.primary};
+    height: 130vh;
     overflow: hidden;
+    margin-bottom: 2rem;
     h2{
         display: flex;
         flex-direction: column;

@@ -38,7 +38,7 @@ export default TrackAndTrade;
 const TrackContainer = styled.div`
     height: 115vh;
     align-items: center;
-    background-color: #00c3ff;
+    background-color: ${props => props.theme.colors.secondary};
     padding-top: 2rem;
     // animation
     @keyframes icon-animation{
@@ -65,7 +65,7 @@ const TrackContainer = styled.div`
             text-shadow: 2px 2px 4px black;
         }
         p .spanBottom {
-            color: black;
+            color: ${props => props.theme.colors.primary};
         }
     }
     .icon-mov-top {

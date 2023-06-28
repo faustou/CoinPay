@@ -25,7 +25,9 @@ function App() {
           <SpaceAnimation />
           <LinearCoins />
           <CoinPayCard />
+          <CarouselInf />
           <TrackAndTrade />
+          <CarouselInf2 />
           <Routes>
           <Route path='/' element={
             <CryptoTable />
@@ -34,8 +36,6 @@ function App() {
               <CryptoTable />
             } />
           </Routes>
-          <CarouselInf />
-          <CarouselInf2 />
           <LinearCoin />
           <Faqs />
           <Footer />
@@ -48,7 +48,7 @@ function App() {
 export default App
 
 const AppContainer = styled.div`
-  background-color: #00c3ff;
+  background-color: ${props => props.theme.colors.secondary};
   color: black;
   font-family: 'Poppins', sans-serif;
 `
