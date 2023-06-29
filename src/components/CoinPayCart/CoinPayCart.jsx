@@ -27,7 +27,7 @@ export default CoinPayCard;
 
 const PayCard = styled.div`
     display: flex;
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${({theme}) => theme.bgc};
     gap: 3rem;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ const PayCard = styled.div`
         margin: 3rem;
     }
     .text-container{
-        color: ${props => props.theme.colors.tertiary};
+        color: ${({theme}) => theme.text};
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -90,7 +90,7 @@ const PayCard = styled.div`
             left: 50%;
             transform: translate(-50%,-40%) rotate(-20deg);
             z-index: 0;
-            border: 0.103640625vw solid ${props => props.theme.colors.tertiary};
+            border: 0.103640625vw solid ${({theme}) => theme.terciary};
             border-radius: 100%;
             width: 80%;
             height: 32vh;
@@ -101,14 +101,14 @@ const PayCard = styled.div`
             left: 50%;
             transform: translate(-50%,-40%) rotate(-25deg);
             z-index: 0;
-            border: 0.103640625vw solid ${props => props.theme.colors.tertiary};
+            border: 0.103640625vw solid ${({theme}) => theme.terciary};
             border-radius: 100%;
             width: 80%;
             height: 32vh;
         }
     }
     h2{
-        color: ${props => props.theme.colors.tertiary};
+        color: ${({theme}) => theme.terciary};
         font-size: 3rem;
         font-family: 'Poppins', sans-serif;
         line-height: 1;

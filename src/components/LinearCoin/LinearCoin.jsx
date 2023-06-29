@@ -63,7 +63,7 @@ const SwipeContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${({theme}) => theme.bgc};
     padding-bottom: 1rem;
     .arrowLeft {
         transform: rotate(180deg);
@@ -80,7 +80,7 @@ const SwipeContainer = styled.div`
 `
 
 const CoinCarousel = styled.div`
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${({theme}) => theme.bgc};
     padding: 3rem 0 3rem 0;
     .contenedorCoin{
         display: flex;
@@ -90,12 +90,12 @@ const CoinCarousel = styled.div`
         width: 90%;
         max-width: 250px!important;
         height: 350px;
-        background-color: ${props => props.theme.colors.primary};
+        background-color: ${({theme}) => theme.primary};
         margin-left: 1.5rem;
         border-radius: 1rem;
         align-items: start;
         &:hover {
-            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 ${props => props.theme.colors.tertiary};
+            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 ${({theme}) => theme.terceary};
         }
         .symbolCoin {
             margin-top: 1rem;

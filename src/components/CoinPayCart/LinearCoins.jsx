@@ -58,7 +58,7 @@ const LinearCarousel = styled.div`
     justify-content: center;
 
     .slider {
-        background: ${props => props.theme.colors.primary};
+        background: ${({theme}) => theme.primary};
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
         margin: auto;
         overflow: hidden;

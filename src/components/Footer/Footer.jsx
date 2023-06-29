@@ -61,10 +61,10 @@ const FooterStyle = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${({theme}) => theme.primary};
     gap: 1rem;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) 0 0;
-    color: ${props => props.theme.colors.tertiary};
+    color: ${({theme}) => theme.terceary};
     h2 {
         font-size: 2rem;
         font-weight: 800;

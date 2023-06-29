@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BurguerButton from './components/BurguerButton';
 import ButtonAppNav from './components/ButtonAppNav';
 import { Link } from 'react-scroll';
+import Switch from './components/Switch';
 
 function NavBar() {
     const [clicked, setClicked] = useState(false)
@@ -35,6 +36,7 @@ function NavBar() {
                 <div className='burguer'>
                     <BurguerButton clicked={clicked} handleClick={handleClick}  />
                 </div>
+                <Switch />
                 <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
                     <ButtonAppNav />
             </NavContainer>

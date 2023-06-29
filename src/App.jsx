@@ -48,7 +48,7 @@ function App() {
 export default App
 
 const AppContainer = styled.div`
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${({theme}) => theme.bgc};
   color: black;
   font-family: 'Poppins', sans-serif;
 `

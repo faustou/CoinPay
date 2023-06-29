@@ -67,7 +67,7 @@ const CryptoTable = () => {
 export default CryptoTable;
 
 const TableStyles = styled.div`
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${({theme}) => theme.primary};
     overflow: hidden;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw);
     margin: 3rem 0px 3rem 0px;

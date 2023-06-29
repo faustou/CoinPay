@@ -79,13 +79,13 @@ const Faqs = () => {
 export default Faqs;
 
 const DivFaqDest = styled.div`
-    background-color: ${props => props.theme.colors.secondary};
+    background-color: ${({theme}) => theme.bgc};
     padding: 2rem;
     height: 110vh;
     background-image: url("../../../public/img/blob.svg");
     background-position: -80px 20px;
     background-repeat: no-repeat;
-    color: ${props => props.theme.colors.tertiary};
+    color: ${({theme}) => theme.text};
     h2{
         display: flex;
         font-family: 'Tusker Grotesk';
@@ -104,9 +104,9 @@ const DivFaqDest = styled.div`
     .buttonFaq{
         border-radius: 29px;
         border: 1px solid black;
-        background-color: ${props => props.theme.colors.primary};
+        background-color: ${({theme}) => theme.primary};
         padding: 20px 20px;
-        color: black;
+        color: ${({theme}) => theme.text};
         font-size: 1.2rem;
         text-transform: uppercase;
         font-weight: 400;
@@ -114,7 +114,8 @@ const DivFaqDest = styled.div`
         cursor: pointer;
     }
     .buttonFaq:hover{
-        background-color: #FFD6E8;
+        background-color: ${({theme}) => theme.bgc};
+        border: 1px solid ${({theme}) => theme.terceary};;
     }
     .question{
         text-align: center;
@@ -133,13 +134,13 @@ const DivFaqDest = styled.div`
         text-align: start;
         line-height: 1;
         .firstH3{
-            border-top: 1px solid ${props => props.theme.colors.tertiary};
+            border-top: 1px solid ${({theme}) => theme.terceary};
         }
         h3{
             width: 70%;
             padding: 1rem;
             text-align: start;
-            border-bottom: 1px solid ${props => props.theme.colors.tertiary};
+            border-bottom: 1px solid ${({theme}) => theme.terceary};
         }
         p{
             width: 30%;
@@ -199,7 +200,7 @@ const DivFaqDest = styled.div`
 `
 
 const DivFaq = styled.div`
-    background-color: ${props => props.theme.colors.primary};
+    background-color: ${({theme}) => theme.primary};
     height: 130vh;
     overflow: hidden;
     margin-bottom: 2rem;
