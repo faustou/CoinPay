@@ -1,13 +1,16 @@
 
 const LightTheme = {
-  text: "",
-  toggle: "",
-  hover: "",
-  bgc: "",
+  text: "black",
+  toggle: "green",
+  primary: "#9400D3",
+  terciary: 'black',
+  hover: "black",
+  bgc: "#FFD6E8",
 }
 
 const DarkTheme = {
   text: "white",
+  toggle: "green",
   primary: "#9400D3",
   terciary: 'white',
   hover: "",

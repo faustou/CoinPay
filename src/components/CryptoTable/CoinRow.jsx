@@ -25,7 +25,7 @@ export default CoinRow;
 const Coin = styled.tr`
     white-space: nowrap;
     font-weight: 600;
-    color: black;
+    color: ${({theme}) => theme.terciary};
     .symbolCoin {
         font-size: 0.5rem;
         font-weight: 700;

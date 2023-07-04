@@ -75,7 +75,7 @@ const TableStyles = styled.div`
         text-align: center;
         font-size: 0.6rem;
         white-space: nowrap;
-        color: black;
+        color: ${({theme}) => theme.terciary};
     }
     tbody{
         border-color: black;
@@ -110,7 +110,6 @@ const TableStyles = styled.div`
             text-align: center;
             font-size: 1rem;
             white-space: nowrap;
-            color: black;
         }
     }
 `

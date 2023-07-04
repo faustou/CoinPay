@@ -5,7 +5,7 @@ import ButtonAppNav from './components/ButtonAppNav';
 import { Link } from 'react-scroll';
 import Switch from './components/Switch';
 
-function NavBar() {
+function NavBar({ theme, setTheme }) {
     const [clicked, setClicked] = useState(false)
     const handleClick = () => {
         setClicked(!clicked)
@@ -32,11 +32,16 @@ function NavBar() {
                     <Link to='/1' className='text-decoration-none'>
                         <a href='/2322211'>Ayuda/FAQ</a>
                     </Link>
+                    <div className='mobile'>
+                        <Switch theme={theme} setTheme={setTheme} />
+                    </div>
                 </div>
                 <div className='burguer'>
                     <BurguerButton clicked={clicked} handleClick={handleClick}  />
                 </div>
-                <Switch />
+                <div className='desktop'>
+                    <Switch  theme={theme} setTheme={setTheme} />
+                </div>
                 <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
                     <ButtonAppNav />
             </NavContainer>
@@ -59,6 +64,11 @@ const NavContainer = styled.nav`
         left: 20px;
         z-index: 20;
         width: 84%;
+        .desktop{
+            @media(max-width: 1024px){
+                display: none;
+            }
+        }
         .burguer {
             position: absolute;
             right: -10px;
@@ -93,6 +103,11 @@ const NavContainer = styled.nav`
             padding: 1rem;
             border-radius: 25px;
             border: black 1px solid;
+            .mobile{
+                @media(min-width: 1024px){
+                    display: none;
+                }
+            }
             a{
                 color: white;
                 font-size: 2rem;
@@ -106,7 +121,7 @@ const NavContainer = styled.nav`
                 width: 450px!important;
                 a{
                     font-size: 0.8rem;
-                    color: black;
+                    color: ${({theme}) => theme.terciary};
                     display: inline;
                 }
             }
@@ -127,7 +142,7 @@ const NavContainer = styled.nav`
             }
         }
         .links:hover {
-            box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 black;
+            box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 white;
         }
         .links.active{
             width: 100%;
