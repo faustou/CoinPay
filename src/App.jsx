@@ -17,7 +17,7 @@ import Footer from './components/Footer/Footer';
 import Faqs from './components/Faq/Faqs';
 
 function App() {
-  const [theme, setTheme] =useState('light');
+  const [theme, setTheme] =useState('dark');
 
   return (
     <>

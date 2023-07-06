@@ -1,9 +1,11 @@
 import React from 'react';
 import ButtonApp from '../NavBar/components/ButtonApp';
 import styled from 'styled-components';
+import { useTranslation } from "react-i18next";
 
 
 const CoinPayCard = () => {
+    const[t] = useTranslation("global");
     return (
         <PayCard>
             <div className='paycard-container' id='CoinPayCard'>
@@ -14,9 +16,9 @@ const CoinPayCard = () => {
                 </div>
                 <div className='text-container'>
                     <p className='name-p'>COINPAY CARD</p>
-                    <h2>Paga con libertad usando nuestra tarjeta crypto</h2>
+                    <h2>{t("pay-card.leyend")}</h2>
                     <ButtonApp />
-                    <p className='more-info'>Para más información visitá los <span> terminos y condiciones. </span> </p>
+                    <p className='more-info'> {t("pay-card.more-info")} <span> {t("pay-card.term-cond")} </span> </p>
                 </div>
             </div>
         </PayCard>

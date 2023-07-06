@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import FourCrypto from './FourCrypto';
+import { useTranslation } from "react-i18next";
 
 
 const TrackAndTrade = () => {
-    
+    const[t] = useTranslation("global");
     const [coins, setCoins] = useState([])
     const getData = async () => {
         const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&locale=en`)
@@ -20,10 +21,10 @@ const TrackAndTrade = () => {
         <TrackContainer className='d-flex flex-column align-items-center justify-content-center'>
             <div className='cont-trade'>
                 <p className='title-track text-center'>
-                    <span> TRACK AND </span>
-                    <span> TRADE </span>
-                    <span className='spanBottom'> CRYPTO </span>
-                    <span className='spanBottom'> CURRENCIES </span>
+                    <span> {t("TrackAndTrade.span1")} </span>
+                    <span> {t("TrackAndTrade.span2")} </span>
+                    <span className='spanBottom'> {t("TrackAndTrade.span3")} </span>
+                    <span className='spanBottom'> {t("TrackAndTrade.span4")} </span>
                 </p>
                 <img className='icon-mov-top' src="https://static.vecteezy.com/system/resources/previews/010/849/972/original/3d-illustration-ethereum-logo-png.png" alt="ethereum" />
                 <img className='icon-mov' src="https://i.ibb.co/2Sx7XhY/3d-illustration-bitcoin-cryptocurrency-png.png" alt="bitcoin" />

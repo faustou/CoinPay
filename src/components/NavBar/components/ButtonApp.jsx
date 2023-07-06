@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from "react-i18next";
 
 const ButtonApp = () => {
+    const[t] = useTranslation("global");
     return (
         <AppButton >
             <div>
-                <h2 className='app'>DESCARGÁ LA APP</h2>
+                <h2 className='app'>{t("button-app.download")}</h2>
             </div>
         </AppButton>
     );
@@ -24,7 +26,7 @@ const AppButton = styled.div`
             line-height: 1;
             color: black;
             border: black 1px solid;
-            max-width: 190px;
+            max-width: 193px;
         }
         h2:hover {
             box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 black;

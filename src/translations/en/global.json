@@ -1,0 +1,51 @@
+{
+    "menu-nav": {
+        "nav1": "HOME",
+        "nav2": "MARKET",
+        "nav3": "EARN",
+        "nav4": "CARD",
+        "nav5": "HELPDESK"
+    },
+    "button-app": {
+        "download": "DOWNLOAD THE APP"
+    },
+    "pay-card": {
+        "leyend": "The crypto revolution meets your wallet",
+        "more-info": "For more information visit the",
+        "term-cond": "Terms of Service"
+    },
+    "TrackAndTrade": {
+        "span1": "TRACK AND",
+        "span2": "TRADE",
+        "span3": "CRYPTO",
+        "span4": "CURRENCIES"
+    },
+    "Faqs": {
+        "quest": "FREQUENT",
+        "spanQuest": "QUESTIONS",
+        "question1": "How do I create my account on COINPAY?",
+        "answer1": "Download the Lemon Cash app, register with your information, and start trading in crypto.",
+        "question2": "How do I deposit money into my Lemon account?",
+        "answer2": "You can deposit pesos into your Lemon CVU from any bank or non-bank account, and it will be credited instantly. You can also deposit cryptocurrencies!",
+        "question3": "How do I withdraw money from my Lemon account?",
+        "answer3": "You can withdraw your pesos to a bank or virtual account whenever you want, and it will be immediate!",
+        "question4": "How do I request my Lemon Card?",
+        "answer4": "You can request your Lemon Card free of charge from the 'Card' section within the app, indicating the address where you want to receive it.",
+        "moreQuest": "SEE MORE QUESTIONS"
+    },
+    "footer": {
+        "p1": "Home",
+        "p2": "Earn",
+        "p3": "Wiki",
+        "p4": "Card",
+        "p5": "Course",
+        "p6": "Contact Us",
+        "p7": "Helpdesk",
+        "p8": "Lemon Talks",
+        "p9": "Work At Lemon",
+        "p10": "Community Discord",
+        "p11": "Community Reddit",
+        "t1": "Terms Of Service",
+        "t2": "Privacy Policy"
+    }
+}

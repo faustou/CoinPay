@@ -1,0 +1,51 @@
+{
+    "menu-nav": {
+        "nav1": "HOME",
+        "nav2": "MERCADO",
+        "nav3": "EARN",
+        "nav4": "TARJETA",
+        "nav5": "AYUDA/FAQ"
+    },
+    "button-app": {
+        "download": "DESCARGÁ LA APP"
+    },
+    "pay-card": {
+        "leyend": "Paga con libertad usando nuestra tarjeta crypto",
+        "more-info": "Para más información visitá los",
+        "term-cond": "terminos y condiciones."
+    },
+    "TrackAndTrade": {
+        "span1": "SEGUÍ Y",
+        "span2": "COMERCIÁ",
+        "span3": "CRYPTO",
+        "span4": "MONEDAS"
+    },
+    "Faqs": {
+        "quest": "PREGUNTAS",
+        "spanQuest": "FRECUENTES",
+        "question1": "¿Cómo creo mi cuenta en COINPAY?",
+        "answer1": "Descargá la app Lemon Cash, registrate con tus datos y empezá a operar en crypto.",
+        "question2": "¿Cómo cargo dinero en mi cuenta de Lemon?",
+        "answer2": "Podés depositar pesos a tu CVU de Lemon desde cualquier cuenta bancaria o no bancaria y se acreditan al instante. ¡También podés depositar criptomonedas!",
+        "question3": "¿Cómo retiro dinero desde mi cuenta de Lemon?",
+        "answer3": "¡Podés retirar tus pesos a una cuenta bancaria o virtual cuando quieras de forma inmediata!",
+        "question4": "¿Cómo pido mi Lemon Card?",
+        "answer4": "Podés pedir tu Lemon Card sin costo desde la sección 'Tarjeta' dentro de la app, indicando la dirección donde quieras recibirla.",
+        "moreQuest": "VER MÁS PREGUNTAS"
+    },
+    "footer": {
+        "p1": "Home",
+        "p2": "Earn",
+        "p3": "Wiki",
+        "p4": "Tarjeta",
+        "p5": "Curso",
+        "p6": "Contactanos",
+        "p7": "Ayuda/FAQ",
+        "p8": "Lemon Talks",
+        "p9": "Trabajar En Lemon",
+        "p10": "Comunidad Discord",
+        "p11": "Comunidad Reddit",
+        "t1": "Terminos De Servicio",
+        "t2": "Politica De Privacidad"
+    }
+}

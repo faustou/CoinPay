@@ -1,27 +1,9 @@
 import Faq from 'react-faq-component';
 import '../../fonts.css';
 import styled from 'styled-components';
+import { useTranslation } from "react-i18next";
 
-const data = {
-    rows: [
-      {
-        title: "¿Cómo creo mi cuenta en COINPAY?",
-        content: "Descargá la app Lemon Cash, registrate con tus datos y empezá a operar en crypto."
-      },
-      {
-        title: "¿Cómo cargo dinero en mi cuenta de Lemon?",
-        content: "Podés depositar pesos a tu CVU de Lemon desde cualquier cuenta bancaria o no bancaria y se acreditan al instante. ¡También podés depositar criptomonedas!"
-      },
-      {
-        title: "¿Cómo retiro dinero desde mi cuenta de Lemon?",
-        content: "¡Podés retirar tus pesos a una cuenta bancaria o virtual cuando quieras de forma inmediata!"
-      },
-      {
-        title: "¿Cómo pido mi Lemon Card?",
-        content: "Podés pedir tu Lemon Card sin costo desde la sección 'Tarjeta' dentro de la app, indicando la dirección donde quieras recibirla"
-      }]
-  }
-  const styles = {
+const styles = {
     bgColor: '${props => props.theme.colors.primary}',
     titleTextColor: "black",
     rowTitleColor: "black",
@@ -37,13 +19,33 @@ const config = {
         expandIcon: "+",
         collapseIcon: "x",
         tabFocus: true
-};
-
-const Faqs = () => {
+    };
+    
+    const Faqs = () => {
+        const[t] = useTranslation("global");
+        const data = {
+            rows: [
+            {
+                title: `${t('Faqs.question1')}`,
+                content: `${t('Faqs.answer1')}`
+            },
+            {
+                title: `${t('Faqs.question2')}`,
+                content: `${t('Faqs.answer2')}`
+            },
+            {
+                title: `${t('Faqs.question3')}`,
+                content: `${t('Faqs.answer3')}`
+            },
+            {
+                title: `${t('Faqs.question4')}`,
+                content: `${t('Faqs.answer4')}`
+            }]
+        }
     return (
         <>
             <DivFaq className="d-flex flex-column align-items-center p-3">
-                <h2>PREGUNTAS <span> FRECUENTES </span> </h2>
+                <h2>{t("Faqs.quest")}<span>{t("Faqs.spanQuest")}</span> </h2>
                 <Faq
                     data={data}
                     styles={styles}
@@ -51,25 +53,25 @@ const Faqs = () => {
                 />
             </DivFaq>
             <DivFaqDest className='d-flex flex-column align-items-center'>
-                <h2>PREGUNTAS <span> FRECUENTES </span> </h2>
+                <h2>{t("Faqs.quest")}<span>{t("Faqs.spanQuest")}</span> </h2>
                 <div className='question-item d-flex'>
-                    <p className='answer'>Descargá la app Lemon Cash, registrate con tus datos y empezá a operar en crypto.</p>
-                    <h3 className='question firstH3'>¿Cómo creo mi cuenta en COINPAY?</h3>
+                    <p className='answer'>{t("Faqs.answer1")}</p>
+                    <h3 className='question firstH3'>{t("Faqs.question1")}</h3>
                 </div>
                 <div className='question-item d-flex'>
-                    <p className='answer'>Podés depositar pesos a tu CVU de Lemon desde cualquier cuenta bancaria o no bancaria y se acreditan al instante. ¡También podés depositar criptomonedas!</p>
-                    <h3 className='question'>¿Cómo cargo dinero en mi cuenta de Lemon?</h3>
+                    <p className='answer'>{t("Faqs.answer2")}</p>
+                    <h3 className='question'>{t("Faqs.question2")}</h3>
                 </div>
                 <div className='question-item d-flex'>
-                    <p className='answer'>¡Podés retirar tus pesos a una cuenta bancaria o virtual cuando quieras de forma inmediata!</p>
-                    <h3 className='question'>¿Cómo retiro dinero desde mi cuenta de Lemon?</h3>
+                    <p className='answer'>{t("Faqs.answer3")}</p>
+                    <h3 className='question'>{t("Faqs.question3")}</h3>
                 </div>
                 <div className='question-item d-flex'>
-                    <p className='answer'>Podés pedir tu Lemon Card sin costo desde la sección 'Tarjeta' dentro de la app, indicando la dirección donde quieras recibirla.</p>
-                    <h3 className='question'>¿Cómo pido mi Lemon Card?</h3>
+                    <p className='answer'>{t("Faqs.answer4")}</p>
+                    <h3 className='question'>{t("Faqs.question4")}</h3>
                 </div>
                 <div className='d-flex'>
-                    <p className='buttonFaq'>Ver más preguntas</p>
+                    <p className='buttonFaq'>{t("Faqs.moreQuest")}</p>
                 </div>
             </DivFaqDest>
         </>

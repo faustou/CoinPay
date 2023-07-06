@@ -4,8 +4,12 @@ import BurguerButton from './components/BurguerButton';
 import ButtonAppNav from './components/ButtonAppNav';
 import { Link } from 'react-scroll';
 import Switch from './components/Switch';
+import { useTranslation } from "react-i18next";
+
 
 function NavBar({ theme, setTheme }) {
+    const[t, i18n] = useTranslation("global");
+
     const [clicked, setClicked] = useState(false)
     const handleClick = () => {
         setClicked(!clicked)
@@ -18,19 +22,19 @@ function NavBar({ theme, setTheme }) {
                 </div>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <Link to="home" spy={true} smooth={true} offset={50} duration={500} className='text-decoration-none'>
-                        <a>Home</a>
+                        <a>{t("menu-nav.nav1")}</a>
                     </Link>
                     <Link to="CryptoTable" spy={true} smooth={true} offset={0} duration={500} className='text-decoration-none'>
-                        <a href='/'>Market</a>
+                        <a href='/'>{t("menu-nav.nav2")}</a>
                     </Link>
                     <Link to='/1' className='text-decoration-none'>
-                        <a href='/'>EARN</a>
+                        <a href='/'>{t("menu-nav.nav3")}</a>
                     </Link>
                     <Link to="CoinPayCard" spy={true} smooth={true} offset={-150} duration={500} className='text-decoration-none'>
-                        <a>Tarjeta</a>
+                        <a>{t("menu-nav.nav4")}</a>
                     </Link>
                     <Link to='/1' className='text-decoration-none'>
-                        <a href='/2322211'>Ayuda/FAQ</a>
+                        <a href='/2322211'>{t("menu-nav.nav5")}</a>
                     </Link>
                     <div className='mobile'>
                         <Switch theme={theme} setTheme={setTheme} />

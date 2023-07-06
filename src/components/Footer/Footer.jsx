@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const[t] = useTranslation("global");
     return (
         <FooterStyle>
             <div className='logoCoinpay'>
@@ -19,34 +21,34 @@ const Footer = () => {
             <div className='links'>
                 <div className='linksContainer'>
                     <div>
-                        <p>Home</p>
-                        <p>Earn</p>
-                        <p>Wiki</p>
-                        <p>Tarjeta</p>
-                        <p>Curso</p>
+                        <p>{t("footer.p1")}</p>
+                        <p>{t("footer.p2")}</p>
+                        <p>{t("footer.p3")}</p>
+                        <p>{t("footer.p4")}</p>
+                        <p>{t("footer.p5")}</p>
                     </div>
                     <div>
-                        <p>Contactanos</p>
-                        <p>Ayuda/FAQ</p>
-                        <p>Lemon Talks</p>
-                        <p>Trabajar En Lemon</p>
+                        <p>{t("footer.p6")}</p>
+                        <p>{t("footer.p7")}</p>
+                        <p>{t("footer.p8")}</p>
+                        <p>{t("footer.p9")}</p>
                     </div>
                     <div className='textNet'>
                         <p>Instagram</p>
                         <p>Twitter</p>
                         <p>TIKTOK</p>
-                        <p>Comunidad Discord</p>
-                        <p>Comunidad Reddit</p>
+                        <p>{t("footer.p10")}</p>
+                        <p>{t("footer.p11")}</p>
                     </div>
                 </div>
                 <div className='terms'>
                     <div>
-                        <p>Terminos De Servicio</p>
+                        <p>{t("footer.t1")}</p>
                         <p>Copyright 2023 © COINPAY •</p>
                         <p>soporte@coinpay.me</p>
                     </div>
                     <div>
-                        <p>Politica De Privacidad</p>
+                        <p>{t("footer.t2")}</p>
                     </div>
                 </div>
             </div>
