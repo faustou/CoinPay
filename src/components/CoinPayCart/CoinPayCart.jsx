@@ -33,13 +33,13 @@ const PayCard = styled.div`
     gap: 3rem;
     justify-content: center;
     align-items: center;
-    background-image: url(../../../public/object.svg);
+    background-image: url(/object.svg);
     background-position: -175px 180px;
     background-repeat: no-repeat;
     background-size: 200%;
     padding-top: max(80px,7.6003125vw);
     padding-bottom: max(10px,0.6909375vw);
-    overflow: visible;
+    overflow: hidden;
     z-index: 12;
     position: relative;
     min-height: 100vh;

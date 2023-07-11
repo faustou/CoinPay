@@ -15,10 +15,10 @@
         "term-cond": "Terms of Service"
     },
     "TrackAndTrade": {
-        "span1": "TRACK AND",
-        "span2": "TRADE",
-        "span3": "CRYPTO",
-        "span4": "CURRENCIES"
+        "span1": "TRACK AND TRADE",
+        "span2": "TRACK AND TRADE",
+        "span3": "CRYPTO CURRENCIES",
+        "span4": "CRYPTO CURRENCIES"
     },
     "Faqs": {
         "quest": "FREQUENT",
@@ -47,5 +47,10 @@
         "p11": "Community Reddit",
         "t1": "Terms Of Service",
         "t2": "Privacy Policy"
+    },
+    "Language": {
+        "1": "en",
+        "2": "es",
+        "3": "br"
     }
 }

@@ -26,8 +26,6 @@ const TrackAndTrade = () => {
                     <span className='spanBottom'> {t("TrackAndTrade.span3")} </span>
                     <span className='spanBottom'> {t("TrackAndTrade.span4")} </span>
                 </p>
-                <img className='icon-mov-top' src="https://static.vecteezy.com/system/resources/previews/010/849/972/original/3d-illustration-ethereum-logo-png.png" alt="ethereum" />
-                <img className='icon-mov' src="https://i.ibb.co/2Sx7XhY/3d-illustration-bitcoin-cryptocurrency-png.png" alt="bitcoin" />
             </div>
             <FourCrypto coins={coins} />
         </TrackContainer>
@@ -41,18 +39,6 @@ const TrackContainer = styled.div`
     align-items: center;
     background-color: ${({theme}) => theme.bgc};
     padding-top: 2rem;
-    // animation
-    @keyframes icon-animation{
-        0% {
-            transition: 0px 0px;
-        }
-        50% {
-            translate: 0px 30px;
-        }
-        100% {
-            translate: 0px 0px;
-        }
-    }    
     .cont-trade{
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         height: 280px;
@@ -69,29 +55,14 @@ const TrackContainer = styled.div`
             color: ${({theme}) => theme.primary};
         }
     }
-    .icon-mov-top {
-        height: 80px;
-        position: relative;
-        top: -280px;
-        left: 220px;
-        overflow: hidden;
-        animation: icon-animation 5s ease-in-out infinite;
-    }
-    .icon-mov {
-        height: 80px;
-        position: relative;
-        top: -280px;
-        left: -130px;
-        overflow: hidden;
-        animation: icon-animation 5s ease-in-out infinite;
-    }
     .title-track{
         color: #FFD6E8;
-        font-size: 7rem;
+        font-size: 4.2rem;
         font-weight: 900;
         font-family: 'Tusker Grotesk';
         line-height: 1;
         text-transform: uppercase;
+        padding-bottom: 4rem;
         span{
             font-size: 2,8rem;
             color: #FFD6E8;
@@ -120,7 +91,7 @@ const TrackContainer = styled.div`
     }
     @media(min-width: 970px) {
         .title-track span{
-                font-size: 5.2rem;
+                font-size: 9rem;
             }
         .icon-mov {
             top: -390px;
@@ -135,7 +106,7 @@ const TrackContainer = styled.div`
     }
     @media(min-width: 1500px) {
         .title-track span{
-                font-size: 5.2rem;
+                font-size: 8.3rem;
         }
         .icon-mov {
             top: -370px;

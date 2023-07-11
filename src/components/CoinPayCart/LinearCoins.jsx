@@ -97,11 +97,12 @@ const LinearCarousel = styled.div`
             text-align: center;
             align-items: center;
             justify-content: center;
-            font-size: 0.6rem;
+            font-size: 0.8rem;
             gap: 0.5rem;
             height: 30px;
             border-radius: 5%;
             margin: 0 0.5rem 0 0.5rem;
+            font-weight: 700;
             img {
                 height: 18px;
                 width: 18px;

@@ -15,10 +15,10 @@
         "term-cond": "terminos y condiciones."
     },
     "TrackAndTrade": {
-        "span1": "SEGUÍ Y",
-        "span2": "COMERCIÁ",
-        "span3": "CRYPTO",
-        "span4": "MONEDAS"
+        "span1": "SEGUÍ Y COMERCIÁ",
+        "span2": "SEGUÍ Y COMERCIÁ",
+        "span3": "CRYPTO MONEDAS",
+        "span4": "CRYPTO MONEDAS"
     },
     "Faqs": {
         "quest": "PREGUNTAS",
@@ -47,5 +47,10 @@
         "p11": "Comunidad Reddit",
         "t1": "Terminos De Servicio",
         "t2": "Politica De Privacidad"
+    },
+    "Language": {
+        "1": "es",
+        "2": "br",
+        "3": "en"
     }
 }

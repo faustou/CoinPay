@@ -25,12 +25,12 @@ const AppButtonNav = styled.div`
             font-size: 1rem;
             font-weight: 400;
             line-height: 1;
-            color: black;
-            border: black 1px solid;
+            color: ${({ theme }) => theme.terciary};
+            border: ${({ theme }) => theme.terciary} 1px solid;
             max-width: 193px;
         }
         h2:hover {
-            box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 black;
+            box-shadow: max(2px,0.3909375vw) max(2px,0.4673125vw) 0 0 ${({ theme }) => theme.terciary};
         }
         @media(min-width: 1024px) {
             display: block!important;

@@ -13,7 +13,7 @@ const CryptoTable = () => {
     const numbers = !number ? number : 1
     const [coins, setCoins] = useState([])
     const getData = async () => {
-        const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${numbers}&sparkline=false&locale=en`)
+        const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${number}&sparkline=false&locale=en`)
         setCoins(res.data)
     }
     useEffect(() => {
@@ -71,14 +71,16 @@ const TableStyles = styled.div`
     overflow: hidden;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw);
     margin: 3rem 0px 3rem 0px;
+    border: black 1px solid;
     thead {
         text-align: center;
         font-size: 0.6rem;
         white-space: nowrap;
         color: ${({theme}) => theme.terciary};
+        border-color: ${({theme}) => theme.terciary};
     }
     tbody{
-        border-color: black;
+        border-color: ${({theme}) => theme.terciary};
     }
     .table-container{
         font-size: 0.56rem;

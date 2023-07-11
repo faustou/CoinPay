@@ -22,7 +22,7 @@ const AnimationSpace = styled.div`
     width: 100%;
     position: relative;
     z-index: 18;
-    background: radial-gradient(circle, black 20%,#9400D3 100%);
+    background: ${({theme}) => theme.spaceAnimation};
     background-size: 700% 700%;
     animation: color 17s ease-in-out infinite;
     overflow: hidden;

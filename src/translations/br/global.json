@@ -15,14 +15,14 @@
         "term-cond": "termos e condições."
     },
     "TrackAndTrade": {
-        "span1": "SIGA E",
-        "span2": "NEGOCIE",
-        "span3": "CRYPTO",
-        "span4": "MOEDAS"
+        "span1": "SIGA E NEGOCIE",
+        "span2": "SIGA E NEGOCIE",
+        "span3": "CRYPTO MOEDAS",
+        "span4": "CRYPTO MOEDAS"
     },
     "Faqs": {
-        "quest": "PERGUNTAS",
-        "spanQuest": "FRECUENTES",
+        "quest": "QUESTÕES",
+        "spanQuest": "FREQUENTES",
         "question1": "Como faço para criar minha conta no COINPAY?",
         "answer1": "Baixe o aplicativo Lemon Cash, registre-se com seus dados e comece a operar com criptomoedas.",
         "question2": "Como deposito dinheiro na minha conta Lemon?",
@@ -47,5 +47,10 @@
         "p11": "Comunidade Reddit",
         "t1": "Termos de Serviço",
         "t2": "Política de Privacidade"
+    },
+    "Language": {
+        "1": "br",
+        "2": "es",
+        "3": "en"
     }
 }

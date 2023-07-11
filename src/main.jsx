@@ -11,7 +11,7 @@ import global_br from "./translations/br/global.json"
 
 i18next.init({
   interpolation: { escapeValue: false},
-  lng: "br",
+  lng: "en",
   resources: {
     es: {
       global: global_es

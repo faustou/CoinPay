@@ -65,6 +65,7 @@ const FooterStyle = styled.div`
     padding-top: 2rem;
     background-color: ${({theme}) => theme.primary};
     gap: 1rem;
+    border: black 1px solid;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) 0 0;
     color: ${({theme}) => theme.terceary};
     h2 {

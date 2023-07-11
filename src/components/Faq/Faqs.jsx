@@ -84,7 +84,7 @@ const DivFaqDest = styled.div`
     background-color: ${({theme}) => theme.bgc};
     padding: 2rem;
     height: 110vh;
-    background-image: url("../../../public/img/blob.svg");
+    background-image: url("img/blob.svg");
     background-position: -80px 20px;
     background-repeat: no-repeat;
     color: ${({theme}) => theme.text};

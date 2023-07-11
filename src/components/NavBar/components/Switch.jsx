@@ -44,6 +44,11 @@ export default Switch;
 
 export const SwitchContainer = styled.div`
     transition: 0.5s all ease-in;
+    position: relative;
+    top: 175px;
+    @media(min-width: 1024px){
+            top: 5px;
+        }
 `
 
 export const SwitchWrapper = styled.div`
@@ -59,12 +64,12 @@ export const SwitchBGC = styled.div`
     position: relative;
     width: 60px;
     height: 40px;
-    border: black 1px solid;
+    border: ${({ theme }) => theme.terciary} 1px solid;
     border-radius: 30px;
     background-color: ${({theme}) => theme.primary};
     transition: 1s all ease-in;
     :hover {
-            box-shadow: max(8px,0.6909375vw) max(12px,0.9673125vw) 0 0 black;
+            box-shadow: max(2px,0.3909375vw) max(2px,0.4673125vw) 0 0 ${({ theme }) => theme.terciary};
             transition: 0.5s all ease-in;
         }
 `
