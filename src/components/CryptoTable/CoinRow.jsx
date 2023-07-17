@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CoinRow = ({coin}) => {
     return (
-        <Coin key={coin.name}>
+        <Coin key={coin.name} valign="middle">
             <td className='nameCoin'> 
                 <img src={coin.image} alt={coin.name} className='me-2 img-fluid img-table' />
                 <span>
@@ -25,7 +25,9 @@ export default CoinRow;
 const Coin = styled.tr`
     white-space: nowrap;
     font-weight: 600;
+    text-align: center;
     color: ${({theme}) => theme.terciary};
+    vertical-align: middle;
     .symbolCoin {
         font-size: 0.5rem;
         font-weight: 700;
@@ -37,6 +39,15 @@ const Coin = styled.tr`
     .nameCoin {
         min-width: 130px;
         font-size: 8px;
+        text-align: start;
+    }
+    @media (min-width: 464px) {
+        .symbolCoin {
+            font-size: 0.5rem;
+        }
+        .nameCoin {
+            font-size: 0.6rem;
+        }
     }
     @media (min-width: 768px) {
         font-size: 1rem;

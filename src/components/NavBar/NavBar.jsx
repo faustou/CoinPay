@@ -94,7 +94,7 @@ const NavContainer = styled.nav`
         }
         a {
             text-decoration: none;
-            margin-right: 1rem;
+            margin: 0.5rem;
             color: white;
         }
         .logo-coinpay {

@@ -19,10 +19,12 @@ const CryptoTable = () => {
     useEffect(() => {
         getData()
     }, [number])
-    console.log(coins)
 
     return (
         <TableStyles>
+            <div className='tittle-market'>
+                <h2 className='market-t'>Cryptocurrency Prices by Market Cap</h2>
+            </div>
             <div className='container table-container pt-4' id='CryptoTable'>
                 <table className='table ps-0'>
                     <thead className='text-start'>
@@ -67,11 +69,23 @@ const CryptoTable = () => {
 export default CryptoTable;
 
 const TableStyles = styled.div`
-    background-color: ${({theme}) => theme.primary};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ${({theme}) => theme.secondary};
+    background-color: ${({theme}) => theme.bgc};
     overflow: hidden;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw) max(50px,3.4546875vw);
     margin: 3rem 0px 3rem 0px;
     border: black 1px solid;
+    .tittle-market {
+        padding-top: 1.5rem;
+        font-family: "Tusker Grotesk";
+        text-transform: uppercase;
+        .market-t {
+            font-size: 2rem;
+        }
+    }
     thead {
         text-align: center;
         font-size: 0.6rem;
@@ -89,9 +103,10 @@ const TableStyles = styled.div`
         .pills{
             .links-pills{
                 .btn-text-hover {
+                    color: ${({theme}) => theme.terciary}!important;
                     &:hover {
-                        background-color: black;
-                        color: white!important;
+                        background-color: ${({theme}) => theme.primary};
+                        color: ${({theme}) => theme.terciary}!important;
                     }
                 }
             }
@@ -101,17 +116,36 @@ const TableStyles = styled.div`
         .table-container{
             font-size: 0.7rem;
         }
+        thead {
+            font-size: 1rem;
+        }
     }
-
+    @media (min-width: 600px) {
+        margin: 2rem 1rem 1rem 1rem;
+    }
     @media (min-width: 768px) {
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 2rem 1rem 0 1rem;
         thead {
             text-align: center;
             font-size: 1rem;
             white-space: nowrap;
+        }
+        .tittle-market {
+            .market-t {
+                font-size: 4rem;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        margin: 2rem 4rem 0 4rem;
+        .tittle-market {
+            .market-t {
+                font-size: 6rem;
+            }
         }
     }
 `

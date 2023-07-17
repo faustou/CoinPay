@@ -33,14 +33,16 @@ function App() {
             <CarouselInf />
             <TrackAndTrade />
             <CarouselInf2 />
-            <Routes>
-            <Route path='/' element={
-              <CryptoTable />
-            } />
-              <Route path='/:number' element={
-                <CryptoTable />
-              } />
-            </Routes>
+            <TableBG>
+              <Routes>
+                  <Route path='/' element={
+                    <CryptoTable />
+                  } />
+                  <Route path='/:number' element={
+                    <CryptoTable />
+                  } />
+              </Routes>
+            </TableBG>
             <LinearCoin />
             <Faqs />
             <Footer />
@@ -57,4 +59,8 @@ const AppContainer = styled.div`
   background-color: ${({theme}) => theme.bgc};
   color: black;
   font-family: 'Poppins', sans-serif;
+`
+const TableBG = styled.div`
+  background-color: ${({theme}) => theme.primary};
+  padding: 2rem 0 2rem 0;
 `
