@@ -43,7 +43,6 @@ const Switch = (props) => {
 export default Switch;
 
 export const SwitchContainer = styled.div`
-    transition: 0.5s all ease-in;
     position: relative;
     top: 175px;
     @media(min-width: 1024px){
@@ -67,10 +66,9 @@ export const SwitchBGC = styled.div`
     border: ${({ theme }) => theme.terciary} 1px solid;
     border-radius: 30px;
     background-color: ${({theme}) => theme.primary};
-    transition: 1s all ease-in;
+    transition: all .3s ease;
     :hover {
             box-shadow: max(2px,0.3909375vw) max(2px,0.4673125vw) 0 0 ${({ theme }) => theme.terciary};
-            transition: 0.5s all ease-in;
         }
 `
 
@@ -84,7 +82,6 @@ export const ButtonSwitch = styled.button`
     border: none;
     border-radius: 50%;
     background-color: ${({theme}) => theme.terciary};
-    transition: 0.4s all ease-in;
     outline: none;
     .sunIcon {
         color: ${({theme}) => theme.primary};

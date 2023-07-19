@@ -24,11 +24,12 @@ const AppButton = styled.div`
             font-size: 1rem;
             font-weight: 400;
             line-height: 1;
-            color: black;
+            color: ${({ theme }) => theme.terciary};
             border: ${({ theme }) => theme.terciary} 1px solid;
             max-width: 193px;
         }
         h2:hover {
+            background-color: ${({ theme }) => theme.colorButtomNav};
             box-shadow: max(2px,0.3909375vw) max(2px,0.4673125vw) 0 0 ${({ theme }) => theme.terciary};
         }
 `

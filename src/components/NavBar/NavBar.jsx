@@ -77,13 +77,14 @@ const NavContainer = styled.nav`
         width: 84%!important;
         @media(min-width: 1024px){
             width: 100%!important;
+
         }
         @media(min-width: 1024px){
             justify-content: space-evenly!important;
         }
         .desktop{
             display: flex;
-            gap: 1rem;
+            gap: 0.4rem;
             @media(max-width: 1023px){
                 display: none;
             }
@@ -94,7 +95,7 @@ const NavContainer = styled.nav`
         }
         a {
             text-decoration: none;
-            margin: 0.5rem;
+            margin: 0.4rem;
             color: white;
         }
         .logo-coinpay {
@@ -117,7 +118,7 @@ const NavContainer = styled.nav`
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            transition: all .5s ease;
+            transition: all .3s ease;
             background-color: #9400D3;
             padding: 1rem;
             border-radius: 25px;
@@ -138,24 +139,52 @@ const NavContainer = styled.nav`
             @media(min-width: 1024px){
                 position: initial;
                 margin: 0;
-                width: 450px!important;
+                width: 500px!important;
                 a{
-                    font-size: 0.8rem;
+                    font-size: 0.95rem;
                     color: ${({theme}) => theme.terciary};
                     display: inline;
+                    position: relative;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        background-color: ${({theme}) => theme.terciary};
+                        height: 2px;
+                        width: 0;
+                        left: 0;
+                        bottom: -5px;
+                        transition: 0.3s;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                    }
+                    &:hover {
+                        text-shadow: 0px 0px 4px ${({theme}) => theme.hoverLi};
+                    }
                 }
             }
         }
         @media(min-width: 1024px) {
             left: 0px;
         }
+        @media(min-width: 1300px) {
+            .links{
+                width: 600px!important;
+                a {
+                    font-size: 1.25rem;
+                }
+            }
+        }
         @media(min-width: 1500px) {
             .links{
-                width: 550px!important;
+                width: 750px!important;
                 a {
-                    font-size: 1rem;
+                    font-size: 1.6rem;
                 }
 
+            }
+            .desktop{
+            gap: 2rem;
             }
             .logo-coinpay {
                 font-size: 2.5rem;

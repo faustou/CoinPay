@@ -94,8 +94,9 @@ const CoinCarousel = styled.div`
         margin-left: 1.5rem;
         border-radius: 1rem;
         align-items: start;
+        color: ${({theme}) => theme.hover};
         &:hover {
-            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 ${({theme}) => theme.terciary};
+            box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 ${({theme}) => theme.hover};
         }
         .symbolCoin {
             margin-top: 1rem;

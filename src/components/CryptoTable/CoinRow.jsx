@@ -25,7 +25,7 @@ export default CoinRow;
 const Coin = styled.tr`
     white-space: nowrap;
     font-weight: 600;
-    text-align: center;
+    text-align: start;
     color: ${({theme}) => theme.terciary};
     vertical-align: middle;
     .symbolCoin {

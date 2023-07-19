@@ -63,7 +63,7 @@ export const LanguageBGC = styled.div`
   font-size: 1.5rem;
   text-transform: uppercase;
   border: ${({ theme }) => theme.terciary} 1px solid;
-
+  transition: all .3s ease;
   .primary-btn {
     display: flex;
     align-items: center;
@@ -71,7 +71,6 @@ export const LanguageBGC = styled.div`
     margin-top: 0.4rem;
     cursor: pointer;
   }
-
   :hover {
     box-shadow: max(2px,0.3909375vw) max(2px,0.4673125vw) 0 0 ${({ theme }) => theme.terciary};
   }
@@ -85,7 +84,6 @@ export const DropdownMenu = styled.div`
   top: 100%;
   left: 0;
   pointer-events: auto;
-
   .hover-btn {
     display: flex;
     align-items: center;

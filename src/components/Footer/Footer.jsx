@@ -10,13 +10,13 @@ const Footer = () => {
                 <h2>COINPAY</h2>
             </div>
             <div className='networks'>
-                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/instagram.svg" alt="telegram" style={{ height: '25px'}} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/instagram.svg" alt="instagram" style={{ height: '25px' }} /> </a>
                 <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/telegram.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/discord.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/twitter.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/tiktok.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/youtube.svg" alt="telegram" style={{ height: '25px' }} /> </a>
-                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/linkedin.svg" alt="telegram" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/discord.svg" alt="discord" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/twitter.svg" alt="twitter" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/tiktok.svg" alt="tiktok" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/youtube.svg" alt="youtube" style={{ height: '25px' }} /> </a>
+                <a href="https://twitter.com/" target="_blank"> <img className='imgNetworks' src="/img/linkedin.svg" alt="linkedin" style={{ height: '25px' }} /> </a>
             </div>
             <div className='links'>
                 <div className='linksContainer'>
@@ -65,12 +65,17 @@ const FooterStyle = styled.div`
     padding-top: 2rem;
     background-color: ${({theme}) => theme.primary};
     gap: 1rem;
-    border: black 1px solid;
+    border: ${({theme}) => theme.terciary} 1px solid;
+    border-bottom: none;
     border-radius: max(50px,3.4546875vw) max(50px,3.4546875vw) 0 0;
-    color: ${({theme}) => theme.terceary};
+    color: black;
+
     h2 {
         font-size: 2rem;
         font-weight: 800;
+        -webkit-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 0px 4px ${({theme}) => theme.hoverLi};
     }
     .links {
         display: flex;
@@ -136,6 +141,7 @@ const FooterStyle = styled.div`
         @media (min-width: 740px) {
             flex-direction: row;
             justify-content: space-evenly;
+            color: ${({theme}) => theme.terciary};
             h2 {
                 font-size: 2rem;
                 margin: 2rem;
@@ -158,6 +164,11 @@ const FooterStyle = styled.div`
                         display: block;
                     }
                 }
+            }
+        }
+        @media (min-width: 1500px) {
+            h2 {
+                font-size: 4rem;
             }
         }
     }

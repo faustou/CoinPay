@@ -117,7 +117,8 @@ const DivFaqDest = styled.div`
     }
     .buttonFaq:hover{
         background-color: ${({theme}) => theme.bgc};
-        border: 1px solid ${({theme}) => theme.terceary};;
+        border: 1px solid ${({theme}) => theme.terceary};
+        box-shadow: max(2px,0.3909375vw) max(2px,0.4673125vw) 0 0 ${({ theme }) => theme.terciary};
     }
     .question{
         text-align: center;
