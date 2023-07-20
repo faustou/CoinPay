@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const SpaceAnimation = () => {
     return (
         <AnimationSpace id='home'>
-            <img className='cicle-ethe' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
-            <img className='cicle-ethe-sm' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="" />
-            <img className='cicle-slp' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />
-            <img className='cicle-slp-sm' src="https://i.ibb.co/V06PTJY/slp.png" alt="" />
-            <img className='cicle-doge' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
-            <img className='cicle-doge-md' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
-            <img className='cicle-doge-sm' src="https://i.ibb.co/h72LcWh/doge.png" alt="" />
+            <img className='cicle-ethe' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="bubble-ether" />
+            <img className='cicle-ethe-sm' src="https://i.ibb.co/0mbTwjJ/ethe.png" alt="bubble-ether" />
+            <img className='cicle-slp' src="https://i.ibb.co/V06PTJY/slp.png" alt="bubble-slp" />
+            <img className='cicle-slp-sm' src="https://i.ibb.co/V06PTJY/slp.png" alt="bubble-slp" />
+            <img className='cicle-doge' src="https://i.ibb.co/h72LcWh/doge.png" alt="bubble-doge" />
+            <img className='cicle-doge-md' src="https://i.ibb.co/h72LcWh/doge.png" alt="bubble-doge" />
+            <img className='cicle-doge-sm' src="https://i.ibb.co/h72LcWh/doge.png" alt="bubble-doge" />
         </AnimationSpace>
     );
 };

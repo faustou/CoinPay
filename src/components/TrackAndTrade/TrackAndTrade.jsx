@@ -12,7 +12,6 @@ const TrackAndTrade = () => {
         const res = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false&locale=en`)
         setCoins(res.data)
     }
-    console.log(coins)
     useEffect(() => {
         getData()
     }, [])
@@ -57,7 +56,7 @@ const TrackContainer = styled.div`
     }
     .title-track{
         color: #FFD6E8;
-        font-size: 4.2rem;
+        font-size: 4rem;
         font-weight: 900;
         font-family: 'Tusker Grotesk';
         line-height: 1;

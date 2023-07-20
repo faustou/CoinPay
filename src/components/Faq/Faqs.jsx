@@ -43,7 +43,7 @@ const config = {
             }]
         }
     return (
-        <>
+        <div id='FaqContainer'>
             <DivFaq className="d-flex flex-column align-items-center p-3">
                 <h2>{t("Faqs.quest")}<span>{t("Faqs.spanQuest")}</span> </h2>
                 <Faq
@@ -74,7 +74,7 @@ const config = {
                     <p className='buttonFaq'>{t("Faqs.moreQuest")}</p>
                 </div>
             </DivFaqDest>
-        </>
+        </div>
     );
 };
 

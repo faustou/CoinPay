@@ -20,6 +20,10 @@
         "span3": "CRYPTO CURRENCIES",
         "span4": "CRYPTO CURRENCIES"
     },
+    "LinearCoin": {
+        "tittle": "Earn in ",
+        "span": "Cryptocurrencies"
+    },
     "Faqs": {
         "quest": "FREQUENT",
         "spanQuest": "QUESTIONS",

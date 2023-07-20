@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
+import { useTranslation } from "react-i18next";
 import { Coins } from '../../Coins.js';
 
 
 const responsive = {
     desktopLarge: {
         breakpoint: { max: 3000, min: 1500 },
-        items: 6,
+        items: 5,
         slidesToSlide: 1
       },
     desktop: {
@@ -31,11 +32,19 @@ const responsive = {
       items: 1.3,
       slidesToSlide: 1.3
     }
-  };
+};
+
 
 const LinearCoin = () => {
+    const[t] = useTranslation("global");
     return (
-        <>
+        <div id='Earn'>
+            <TittleLineaCoin>
+                <h2>
+                    <span> {t("LinearCoin.tittle")} </span>
+                    {t("LinearCoin.span")}
+                </h2>
+            </TittleLineaCoin>
             <Carousel responsive={responsive} removeArrowOnDeviceType={["tablet", "mobile"]} infinite={true} autoPlay={true} shouldResetAutoplay={true} autoPlaySpeed={2000}>
                     {
                         Coins.map(Coins =>
@@ -53,11 +62,58 @@ const LinearCoin = () => {
                 <img className='swipe' src="https://i.ibb.co/26gf9SC/swipe.png" alt="Swipe" />
                 <img src="https://i.ibb.co/pZN4fqz/arrow.png" alt="arrow" />
             </SwipeContainer>
-        </>
+        </div>
     );
 };
 
 export default LinearCoin;
+
+const TittleLineaCoin = styled.div`
+    display: flex;
+    flex-direction: row;
+    color: ${({theme}) => theme.terciary};
+    h2 {
+        font-family: 'Tusker Grotesk';
+        text-align: start;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 5rem;
+        font-weight: 900;
+        margin-right: 6rem;
+        margin-bottom: 1rem;
+    }
+    h2 span {
+            font-size: 6.8rem;
+    }
+    @media (min-width: 632px) {
+        justify-content: center;
+        h2 {
+            font-size: 6.6rem;
+            margin: 6rem 0 2rem 0;
+        }
+        h2 span {
+            font-size: 6.6rem;
+    }
+    }
+    @media (min-width: 1150px) {
+        h2 {
+            font-size: 9rem;
+        }
+        h2 span {
+            font-size: 9rem;
+        }
+    }
+    @media (min-width: 1500px) {
+        h2 {
+            font-size: 12rem;
+        }
+        h2 span {
+            font-size: 12rem;
+        }
+    }
+`
 
 const SwipeContainer = styled.div`
     display: flex;
@@ -95,6 +151,7 @@ const CoinCarousel = styled.div`
         border-radius: 1rem;
         align-items: start;
         color: ${({theme}) => theme.hover};
+        border: ${({theme}) => theme.terciary} 4px solid;
         &:hover {
             box-shadow: max(10px,0.6909375vw) max(14px,0.9673125vw) 0 0 ${({theme}) => theme.hover};
         }
@@ -115,7 +172,11 @@ const CoinCarousel = styled.div`
             align-self: center;
         }
     }
-    @media (min-width: 1200px) {
-
+    @media (min-width: 1500px) {
+        .contenedorCoin {
+            max-width: 350px!important;
+            height: 450px;
+            width: 85%;
+        }
     }
 `

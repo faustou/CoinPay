@@ -29,14 +29,14 @@ function NavBar({ theme, setTheme }) {
                         <Link to="CryptoTable" spy={true} smooth={true} offset={-135} duration={500} className='text-decoration-none'>
                             <a href='/'>{t("menu-nav.nav2")}</a>
                         </Link>
-                        <Link to='/1' className='text-decoration-none'>
+                        <Link to="Earn" spy={true} smooth={true} offset={0} duration={500} className='text-decoration-none'>
                             <a href='/'>{t("menu-nav.nav3")}</a>
                         </Link>
-                        <Link to="CoinPayCard" spy={true} smooth={true} offset={-189} duration={500} className='text-decoration-none'>
+                        <Link to="CoinPayCard" spy={true} smooth={true} offset={-128} duration={500} className='text-decoration-none'>
                             <a>{t("menu-nav.nav4")}</a>
                         </Link>
-                        <Link to='/1' className='text-decoration-none'>
-                            <a href='/2322211'>{t("menu-nav.nav5")}</a>
+                        <Link to="FaqContainer" spy={true} smooth={true} offset={0} duration={500} className='text-decoration-none'>
+                            <a>{t("menu-nav.nav5")}</a>
                         </Link>
                     </div>
                     <div className='mobile'>
@@ -208,7 +208,7 @@ const NavContainer = styled.nav`
             a {
                 font-size: 2rem;
                 margin-top: 1rem;
-                color: white;
+                color: ${({ theme }) => theme.terciary}!important;
                 @media(min-width: 1024px){
                     font-size: 1rem;
                 }
