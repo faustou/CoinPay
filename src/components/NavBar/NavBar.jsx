@@ -5,7 +5,7 @@ import ButtonAppNav from './components/ButtonAppNav';
 import { Link } from 'react-scroll';
 import Switch from './components/Switch';
 import { useTranslation } from "react-i18next";
-import LanguageMobile from './components/languageMobile';
+import LanguageMobile from './components/LanguageMobile';
 
 
 function NavBar({ theme, setTheme }) {
