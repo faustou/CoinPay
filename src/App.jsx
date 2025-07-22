@@ -1,8 +1,7 @@
 import './App.css'
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import Theme from './theme.js';
 import CoinPayCard from './components/CoinPayCart/CoinPayCart'
 import NavBar from './components/NavBar/NavBar'

@@ -1,4 +1,3 @@
-
 const LightTheme = {
   text: "black",
   primary: "#9400D3",
